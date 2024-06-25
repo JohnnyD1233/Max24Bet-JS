@@ -1,0 +1,304 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.content {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.side-menu {
+    width: 250px;
+    background-color: #282826;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #282826 url(../img/body.jpg) repeat;
+    min-height: 610px;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.t-shadow, .b-shadow, .carts-bg {
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.t-shadow {
+    top: 0;
+    background: transparent url(../img/t-shadow.png) 0 0 no-repeat;
+}
+
+.carts-bg {
+    bottom: 20px;
+    background: transparent url(../img/carts.png) 20px 100% no-repeat;
+}
+
+.b-shadow {
+    bottom: 0;
+    background: transparent url(../img/b-shadow.png) 0 100% no-repeat;
+}
+
+.selects .cart {
+    display: inline-block;
+    width: calc(33.33% - 20px);
+    /* margin: 0 10px; */
+    box-sizing: border-box;
+}
+
+.selects .cart.first {
+    margin-left: 0;
+}
+
+.selects .cart.last {
+    margin-right: 0;
+}
+
+.selects .carta {
+    position: relative;
+    cursor: pointer;
+    margin-top: 13px;
+}
+
+.selects .carta .appr {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 126px;
+    height: 176px;
+    background: url(../img/appr.png) 0 0 no-repeat;
+}
+
+.selects .carta .appr.yes {
+    display: block;
+}
+
+.cardspecial {
+    display: none;
+}
+
+.carts-shadows {
+    height: 55px;
+    width: 100%;
+    background: url(../img/carts-shadows.png) 0 -2px no-repeat;
+    display: inline-block;
+    margin-top: -5px;
+}
+
+.buttonslc {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonslc a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+.buttonslc a:hover {
+    color: #444;
+    text-decoration: none;
+}
+
+.buttonlc {
+    background-color: #999;
+    background-image: linear-gradient(to bottom, hsla(0, 0%, 100%, .05), hsla(0, 0%, 0%, .1));
+    border: none;
+    border-radius: .5em;
+    box-shadow: inset 0 0 0 1px hsla(0, 0%, 0%, .25),
+                inset 0 2px 0 hsla(0, 0%, 100%, .1),
+                inset 0 1.2em 0 hsla(0, 0%, 100%, .1),
+                inset 0 -.2em 0 hsla(0, 0%, 100%, .1),
+                inset 0 -.25em 0 hsla(0, 0%, 0%, .5),
+                0 .25em .25em hsla(0, 0%, 0%, .1);
+    color: #444;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: .5em 1.5em .75em;
+    text-decoration: none;
+    text-shadow: 0 1px 1px hsla(0, 0%, 100%, .25);
+    display: inline-block;
+    position: relative;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.buttonlc:hover {
+    outline: none;
+    box-shadow: inset 0 0 0 1px hsla(0, 0%, 0%, .25),
+                inset 0 2px 0 hsla(0, 0%, 100%, .1),
+                inset 0 1.2em 0 hsla(0, 0%, 100%, .1),
+                inset 0 -.2em 0 hsla(0, 0%, 100%, .1),
+                inset 0 -.25em 0 hsla(0, 0%, 0%, .5),
+                inset 0 0 0 3em hsla(0, 0%, 100%, .2),
+                0 .25em .25em hsla(0, 0%, 0%, .1);
+    background: yellow;
+}
+
+.buttonlc:active {
+    box-shadow: inset 0 0 0 1px hsla(0, 0%, 0%, .25),
+                inset 0 2px 0 hsla(0, 0%, 100%, .1),
+                inset 0 1.2em 0 hsla(0, 0%, 100%, .1),
+                inset 0 0 0 3em hsla(0, 0%, 100%, .2),
+                inset 0 .25em .5em hsla(0, 0%, 0%, .05),
+                0 -1px 1px hsla(0, 0%, 0%, .1),
+                0 1px 1px hsla(0, 0%, 100%, .25);
+    margin-top: .25em;
+    outline: none;
+    padding-bottom: .5em;
+}
+
+.list-leagues-ttl, .menu-live-btn, .topticker, .lg-ttl, .b_betslip .main-title.betslip-main-title, .b_betslip .button.place-bet {
+    background: #ffd161;
+    background: linear-gradient(to bottom, #ffd161 0%, #e9ae21 100%);
+}
+
+.large {
+    font-size: 1.25em;
+}
+
+.regular {
+    border-radius: 3px;
+}
+
+.custom {
+    background-color: rgba(248, 193, 13, 0.897);
+    color: #092C21;
+}
+
+.sub {
+    overflow: hidden;
+    text-align: center;
+    margin-top: 66px;
+    min-height: 205px;
+}
+
+.sub button {
+    background: rgba(248, 193, 13, 0.897);
+    color: #000;
+    font-size: 1.5em;
+    display: inline-block;
+    padding: 7px;
+    margin-left: 13px;
+    line-height: 30px;
+    text-align: center;
+    width: 120px;
+    transition: background 0.3s, box-shadow 0.3s;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+}
+
+.side-menu {
+    float: right;
+    margin-left: auto; /* Ensures .side-menu aligns to the right */
+    /* Additional styles */
+}
+
+/* Media Query for max-width: 950px */
+@media (max-width: 950px) {
+    .side-menu {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .selects .cart {
+        width: calc(50% - 20px); /* Two cards in a row */
+        /* margin: 10px; */
+    }
+
+    .buttonslc {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .buttonslc a {
+        margin-bottom: 10px;
+    }
+
+    .buttonlc {
+        width: 150px; /* Ensure the width is not constrained */
+        height: 40px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .sub {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .sub button {
+        width: 80%;
+    }
+
+
+    .buttonlc {
+        font-size: 1.5em;
+        padding: 0.3em 0.8em;
+    }
+
+    .sub {
+        margin-top: 20px;
+    }
+
+
+    .carts-shadows {
+        display: none; /* Hide cart shadows image */
+    }
+
+    #makebet{
+        width: 150px; /* Ensure the width is not constrained */
+        height: 40px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    #card1{
+        margin-left: 40px;
+    }
+
+    #card3{
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+
+    #card2{
+        margin-left: 40px;
+    }
+
+    #card4{
+        margin-left: 40px;
+        margin-bottom: 20px;
+
+    }
+
+
+}

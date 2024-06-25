@@ -1,0 +1,440 @@
+/* Base Styles */
+body {
+  background-color: #1f1d1d;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+.header-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  float: left;
+  width: 235px;
+  padding-top: 30px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  /* margin: 24px 0; */
+  float: right;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 23px;
+}
+
+.main-menu-item a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* User Info Styles */
+.user-info {
+  display: inline-block;
+  color: #fff;
+  direction: rtl;
+  background: rgb(90, 88, 88);
+  padding: 0px 20px;
+}
+
+.logout-btn {
+  margin-left: 20px;
+  font-weight: 700;
+  color: orange;
+  text-decoration: underline;
+  display: inline-block;
+  padding-top: 4px;
+  cursor: pointer;
+}
+
+.user-balance {
+  color: #ff0;
+}
+
+/* Option Menu Styles */
+.option-nav {
+  display: inline-block;
+}
+
+.option-menu a {
+  color: #9a9797;
+  text-decoration: none;
+}
+
+.option-menu{
+  /* background-image: url('/Images/hex.jpg');
+    background-size: cover;
+    background-position: center; */
+    text-align: center;
+}
+
+.option-menu nav ul ul {
+  display: none;
+  background: #5f6975;
+  position: absolute;
+  top: 100%;
+  margin-top: 20px;
+  border-radius: 0 0 4px 4px;
+  padding: 5px;
+}
+
+.option-menu nav ul li:hover > ul {
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+
+.option-menu nav ul {
+  list-style: none;
+  position: relative;
+  margin-right: 25px;
+  z-index: 11111;
+}
+
+.option-menu nav ul li {
+  float: left;
+  margin-bottom: 5px;
+}
+
+.option-menu nav ul li:hover a {
+  color: #fff;
+  background: #5f6975;
+  transition: all 0.2s ease-in-out;
+}
+
+.option-menu nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 5px 3px 8px;
+}
+
+.option-menu nav ul ul li {
+  float: none;
+  position: relative;
+  text-align: left;
+  min-width: 100px;
+  /* padding: 5px; */
+}
+
+.option-menu nav ul ul ul {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+.main-menu-item:hover a{
+  background-color: rgba(248, 193, 13, 0.89);
+  border-radius: 15px;
+}
+
+
+/* Player Panel Styles */
+.outer-box_player_panel {
+  background-color: black;
+  height: 89px;
+  width: 100%;
+  max-width: 330px;
+  border-radius: 90px;
+  margin-top: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.container_player_panel {
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  color: orange;
+  position: relative;
+}
+
+.player-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.balance_player_panel {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.fire-image_player_panel {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  height: 80px;
+  width: 80px;
+  background-image: url(../Images/user_panel_icon.png);
+  background-size: cover;
+}
+
+.account_player_panel {
+  font-size: 13px;
+}
+
+.account_player_panel a {
+  color: orange;
+}
+
+.account_player_panel a:hover,
+.log-out_player_panel a:hover {
+  text-decoration: underline;
+}
+
+.log-out_player_panel {
+  color: blue;
+  font-size: 13px;
+}
+
+.log-out_player_panel a {
+  color: blue;
+}
+
+/* Marquee Styles */
+marquee {
+  margin-top: 10px;
+  background-color: rgba(248, 193, 13, 0.897);
+}
+
+/* end of header */
+
+.dropbtn {
+  background-color: rgba(248, 193, 13, 0.897);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin: 0 2px;
+  /* Add some space between buttons */
+}
+
+.dropdown {
+  position: fixed; /* Fixed positioning to keep the dropdown at the bottom */
+  bottom: 0; /* Position the dropdown at the bottom of the viewport */
+  left: 50%; /* Center the dropdown container horizontally */
+  transform: translateX(-50%);
+  display: flex; /* Arrange buttons next to each other */
+  z-index: 1;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  float: right;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  transform: translateX(-50%);
+  bottom: 50px;
+  border-radius: 50px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* Profile menu styling */
+.profile-menu {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1f1d1d;
+  border-radius: 20px;
+  border: rgba(248, 193, 13, 0.897) solid 1px;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 3; /* Ensure profile menu is above other elements */
+  padding: 20px;
+}
+
+.sports-menu {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1f1d1d;
+  border-radius: 20px;
+  border: rgba(248, 193, 13, 0.897) solid 1px;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 3; /* Ensure profile menu is above other elements */
+  padding: 20px;
+}
+
+.sports-menu a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.profile-menu a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+/* Hide list items initially */
+.profile-menu ul {
+  display: none;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.odds,
+.lang {
+  background-image: url("../Images/White-arrow-down.webp"); /* Replace 'arrow_down.png' with the path to your arrow image */
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 40px; /* Adjust as needed */
+}
+.iconss {
+  display: flex;
+  align-items: center;
+}
+
+.icon-img {
+  height: 15px;
+  margin-right: 5px;
+}
+
+.sport-img {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.flags-img {
+  margin-left: 15px;
+  height: 15px;
+}
+
+.logout-img {
+  margin-left: 15px;
+  margin-bottom: 0px;
+  height: 20px;
+}
+
+.profile-menu,
+.sports-menu {
+  max-height: 50vh; /* or any height you prefer */
+  max-width: 50vw;
+  overflow-y: auto;
+}
+
+.status {
+  background-image: url("../Images/user_panel_icon.png");
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 15px; /* Adjust the padding to ensure space for the arrow */
+  border: solid 2px rgba(248, 193, 13, 0.897);
+  border-radius: 50px;
+  color: white;
+}
+
+.x-icon{
+  height: 30px;
+}
+
+.main_block {
+  flex: 1;
+  margin-bottom: 40px;
+  /* display: flex; */
+  justify-content: space-between;
+  position: relative;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+
+.top-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #1f1d1d;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  /* align-items: center; */
+}
+
+/* CSS for desktop */
+@media only screen and (min-width: 951px) {
+  .container {
+    display: none;
+  }
+  .pc-container {
+    display: block;
+  }
+  .phone-logo {
+    display: none;
+  }
+  .phones-only{
+    display: none;
+  }
+
+}
+
+/* Show container on phones and tablets */
+@media only screen and (max-width: 950px) {
+  .container {
+    display: block;
+  }
+  .pc-container {
+    display: none;
+  }
+  .phone-logo {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+
+  .main_block {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+  .top-section {
+    padding: 0px;
+}
+
+}
+
+

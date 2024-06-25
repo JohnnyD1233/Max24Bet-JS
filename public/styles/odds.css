@@ -1,0 +1,93 @@
+/* Reset default margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif; /* Standard font */
+  background-color: #333; /* Dark background */
+  line-height: 1.6; /* Improved readability */
+}
+
+/* Center align top section content */
+.top-section {
+  text-align: center;
+  padding: 20px; /* Add padding for spacing */
+}
+
+/* Container to limit width and center content */
+.container {
+  max-width: 1000px; /* Adjust maximum width as needed */
+  margin: 0 auto;
+  padding: 20px; /* Add padding for spacing */
+}
+
+/* Responsive table styles */
+.oods-tbl {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Add margin for spacing */
+}
+
+.oods-tbl th,
+.oods-tbl td {
+  padding: 10px; /* Padding for cell content */
+  text-align: center; /* Center align table text */
+  font-size: 16px; /* Increase font size for better readability */
+}
+
+/* Responsive image styles */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Adjust .event class to reduce space */
+.event {
+  font-size: 12px; /* Reduce font size */
+  padding: 3px 6px; /* Adjust padding */
+  white-space: nowrap; /* Prevent wrapping of text */
+  overflow: hidden; /* Hide overflow if necessary */
+  text-overflow: ellipsis; /* Show ellipsis for overflow */
+}
+
+/* Responsive adjustments */
+@media (max-width: 950px) {
+  .container {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+  .menu-live-btn {
+    display: none;
+  }
+  .menu-mix-live-btn {
+    display: none;
+  }
+  .menu-clos-open {
+    display: none;
+  }
+  .menu-list {
+    display: none;
+  }
+
+  .top-section {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .oods-tbl th,
+  .oods-tbl td {
+    font-size: 14px; /* Further reduce font size for smaller screens */
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+
+  .event {
+    font-size: 10px; /* Further reduce font size for smaller screens */
+    padding: 2px 4px; /* Adjust padding for smaller screens */
+    width: 10px;
+  }
+  .no-brdr {
+    width: 10px;
+  }
+}

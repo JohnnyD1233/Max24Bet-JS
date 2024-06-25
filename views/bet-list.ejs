@@ -1,0 +1,2626 @@
+
+<!-- 
+<link rel="stylesheet" href="/styles/style_rtl.css" />
+<link rel="stylesheet" href="/styles/colors.css" />
+<link rel="stylesheet" href="/styles/bet-list.css" /> -->
+
+
+
+<%- include('header.ejs') %>
+<section class="top-section">
+  <div class="main_block">
+
+
+
+<div class="regular-league-bar"> 
+  <div class="list-leagues-ttl" style="width: 107px;background-repeat: no-repeat;">רשימת הימורים</div>
+
+  
+  </div>
+
+
+
+
+
+
+
+    <div class="betlist_holder">
+       
+       <table width="955" border="0" cellpadding="5" cellspacing="0.5"> <!--class="bet-list-table-parent"-->
+           <tbody class="betlist_table">
+       
+     
+
+       <tr>
+   
+
+ 
+                 <td style="width:50px;">
+                    <select id="selectbox1" onchange="window.location.href=this.options[this.selectedIndex].value">
+                      
+                   
+                   <option value="bet_list.php?week=1&amp;type=all&amp;status=all" selected="">שבוע נוכחי</option>
+                   
+                   <option value="bet_list.php?week=2&amp;type=all&amp;status=all">שבוע שעבר</option>
+                   
+                   <option value="bet_list.php?week=3&amp;type=all&amp;status=all">2  שבוע - &nbsp; </option>
+                   
+                   <option value="bet_list.php?week=4&amp;type=all&amp;status=all">3  שבוע - &nbsp; </option>
+                   
+                   <option value="bet_list.php?week=5&amp;type=all&amp;status=all">4  שבוע - &nbsp; </option>
+                   
+                   <option value="bet_list.php?week=6&amp;type=all&amp;status=all">5  שבוע - &nbsp; </option>
+                   
+                   <option value="bet_list.php?week=7&amp;type=all&amp;status=all">6  שבוע - &nbsp; </option>
+                   
+                   <option value="bet_list.php?week=8&amp;type=all&amp;status=all">7  שבוע - &nbsp; </option>
+                   
+                   <option value="bet_list.php?week=9&amp;type=all&amp;status=all">8  שבוע - &nbsp; </option>
+                   
+                   <option value="bet_list.php?week=10&amp;type=all&amp;status=all">9  שבוע - &nbsp; </option>
+                   
+                   <option value="bet_list.php?week=11&amp;type=all&amp;status=all">10  שבוע - &nbsp; </option>
+                   
+                   <option value="bet_list.php?week=12&amp;type=all&amp;status=all">11  שבוע - &nbsp; </option>
+               
+                   
+                 </select>
+                 </td>
+       
+
+
+                 <td style="width:30px;">
+                    <select id="selectbox1" onchange="window.location.href=this.options[this.selectedIndex].value">
+             <option value="bet_list.php?week=1&amp;type=all&amp;status=all" selected="">כל הסוגים</option>
+                       <option value="bet_list.php?week=1&amp;type=single&amp;status=all">סינגל</option>
+                       <option value="bet_list.php?week=1&amp;type=combo&amp;status=all">משולב</option>
+                    </select>
+                 </td>
+                 <td>
+                    <select id="selectbox1" onchange="window.location.href=this.options[this.selectedIndex].value">
+                       
+           <option value="bet_list.php?week=1&amp;type=all&amp;status=all" selected="">כל ההימורים</option>
+                       <option value="bet_list.php?week=1&amp;type=all&amp;status=Open">פתוח</option>
+                       <option value="bet_list.php?week=1&amp;type=all&amp;status=Close">סגור</option>
+                       <option value="bet_list.php?week=1&amp;type=all&amp;status=Lose">מפסיד</option>
+                       <option value="bet_list.php?week=1&amp;type=all&amp;status=Win">רווח</option>
+           <option value="bet_list.php?week=1&amp;type=all&amp;status=Draw">תיקו</option>
+                       <option value="bet_list.php?week=1&amp;type=all&amp;status=Cancel">ביטול</option>
+           <option value="bet_list.php?week=1&amp;type=all&amp;status=Reject">נדחה</option>
+                    </select>
+                 </td>
+                 
+       <td>&nbsp;</td>
+       <td>&nbsp;</td>
+       <td>&nbsp;</td>
+                 <td>&nbsp;</td>
+                 <td>&nbsp;</td>
+                 <td>&nbsp;</td>
+                 <td>&nbsp;</td>
+              </tr>
+              
+          </tbody>
+          
+       </table>
+       
+
+
+
+
+
+
+
+
+
+   
+        <div id="betlist">
+
+
+        <table width="955" border="0" cellpadding="10" cellspacing="0.5" class="bet-list-table-parent">
+           <tbody class="betlist_table">
+              
+              <tr>
+                 <th>מספר הימור </th>
+            
+                 <th>זמן הימור</th>
+       <th>Bet</th>
+                 <th>תיאור</th>
+                 <th>מידע נוסף</th>
+                 <th>ליין</th>
+       <th>הפסד</th>
+                 <th>רווח</th>
+                 
+                 <th>סטאטוס</th>
+                 
+              </tr>
+      
+  
+      
+
+<tr class="info-raw">
+
+<td>2330125</td>
+
+<td>13:15 16.06.24</td>
+
+
+<td>משחק מלא מניליין</td>
+<td>
+<span> נגויה גרמפוס </span> נגד <span> שונן בלמרה </span> <span class="team team_highlighted "> תיקו  </span>   1H 28' <span class="clht">(0 - 0)</span>       
+</td>
+<td style="text-align:center;" class="clinfo"><span style="background:#178c67; padding:0px 10px; border-radius:12px; color:#fff; " class="info_btn" onclick="fadetog(2330125,2)">i</span></td>
+<td class="trcodds">2.70</td>
+<td class="trcstake">700</td>
+
+<td class="trctowin">1190</td>
+<td class="statusWin">רווח</td>
+
+
+
+
+      </tr>
+              
+
+
+       
+    
+  <tr class="info_bettr" id="s-2330125-info" style="display: none;"><td colspan="9">
+
+
+
+
+<div class="infobetlistholder">
+<p>ענף   :  <span>כדורגל</span></p>
+<p>ליגה    : <span>יפן ליגה ג'יי 1</span></p>
+<p>סוג הימור    :  <span>משחק מלא מניליין ליין   : <span class="number">2.70</span></span></p>
+<p>תיאור    : 
+<span> נגויה גרמפוס </span> נגד <span> שונן בלמרה </span> <span class="team team_highlighted "> תיקו  </span>   1H 28' <span class="clht">(0 - 0)</span>  
+</p>
+<p>זמן משחק :  <span>1H 28' </span></p>
+<!-- ngIf: event.sccore_ft --> <p>תוצאת משחק: <span> 1 - 1 </span> </p><!-- end ngIf: event.sccore_ft -->
+<!-- ngIf: event.sccore_fh -->
+<!-- ngIf: event.gamestate --> <p>תוצאה בזמן הימור : <span> 0 - 0 </span> </p><!-- end ngIf: event.gamestate -->
+<p>מצב   :            <span> רווח</span> </p>
+</div>
+
+
+  </td>
+
+
+
+</tr>
+
+
+
+
+
+    
+
+      
+
+<tr class="info-raw">
+
+<td>2330124</td>
+
+<td>13:15 16.06.24</td>
+
+
+<td>משחק מלא מניליין</td>
+<td>
+<span>נגויה גרמפוס</span> נגד <span class="team team_highlighted">שונן בלמרה</span> 1H 28' <span class="clht">(0 - 0)</span>       
+</td>
+<td style="text-align:center;" class="clinfo"><span style="background:#178c67; padding:0px 10px; border-radius:12px; color:#fff; " class="info_btn" onclick="fadetog(2330124,2)">i</span></td>
+<td class="trcodds">3.50</td>
+<td class="trcstake">300</td>
+
+<td class="trctowin">-300</td>
+<td class="statusLose">מפסיד</td>
+
+
+
+
+      </tr>
+              
+
+
+       
+    
+  <tr class="info_bettr" id="s-2330124-info" style="display: none;"><td colspan="9">
+
+
+
+
+<div class="infobetlistholder">
+<p>ענף   :  <span>כדורגל</span></p>
+<p>ליגה    : <span>יפן ליגה ג'יי 1</span></p>
+<p>סוג הימור    :  <span>משחק מלא מניליין ליין   : <span class="number">3.50</span></span></p>
+<p>תיאור    : 
+<span>נגויה גרמפוס</span> נגד <span class="team team_highlighted">שונן בלמרה</span> 1H 28' <span class="clht">(0 - 0)</span>  
+</p>
+<p>זמן משחק :  <span>1H 28' </span></p>
+<!-- ngIf: event.sccore_ft --> <p>תוצאת משחק: <span> 1 - 1 </span> </p><!-- end ngIf: event.sccore_ft -->
+<!-- ngIf: event.sccore_fh -->
+<!-- ngIf: event.gamestate --> <p>תוצאה בזמן הימור : <span> 0 - 0 </span> </p><!-- end ngIf: event.gamestate -->
+<p>מצב   :            <span> מפסיד</span> </p>
+</div>
+
+
+  </td>
+
+
+
+</tr>
+
+
+
+
+
+    
+
+      
+
+<tr class="info-raw">
+
+<td>2330123</td>
+
+<td>13:15 16.06.24</td>
+
+
+<td>משחק מלא מניליין</td>
+<td>
+<span class="team_highlighted ">נגויה גרמפוס</span> נגד <span>שונן בלמרה</span>  1H 28' <span class="clht">(0 - 0)</span>       
+</td>
+<td style="text-align:center;" class="clinfo"><span style="background:#178c67; padding:0px 10px; border-radius:12px; color:#fff; " class="info_btn" onclick="fadetog(2330123,2)">i</span></td>
+<td class="trcodds">2.35</td>
+<td class="trcstake">100</td>
+
+<td class="trctowin">-100</td>
+<td class="statusLose">מפסיד</td>
+
+
+
+
+      </tr>
+              
+
+
+       
+    
+  <tr class="info_bettr" id="s-2330123-info" style="display: none;"><td colspan="9">
+
+
+
+
+<div class="infobetlistholder">
+<p>ענף   :  <span>כדורגל</span></p>
+<p>ליגה    : <span>יפן ליגה ג'יי 1</span></p>
+<p>סוג הימור    :  <span>משחק מלא מניליין ליין   : <span class="number">2.35</span></span></p>
+<p>תיאור    : 
+<span class="team_highlighted ">נגויה גרמפוס</span> נגד <span>שונן בלמרה</span>  1H 28' <span class="clht">(0 - 0)</span>  
+</p>
+<p>זמן משחק :  <span>1H 28' </span></p>
+<!-- ngIf: event.sccore_ft --> <p>תוצאת משחק: <span> 1 - 1 </span> </p><!-- end ngIf: event.sccore_ft -->
+<!-- ngIf: event.sccore_fh -->
+<!-- ngIf: event.gamestate --> <p>תוצאה בזמן הימור : <span> 0 - 0 </span> </p><!-- end ngIf: event.gamestate -->
+<p>מצב   :            <span> מפסיד</span> </p>
+</div>
+
+
+  </td>
+
+
+
+</tr>
+
+
+
+
+
+    
+
+  
+      </tbody>
+        </table>
+
+  
+
+
+<div class="betlisttotalholder">
+
+<div class="betlisttotaldec">
+
+
+      <p>קרדיט שבועי : </p>
+      <p>החשבון שלי : </p>
+      <p>רווח/הפסד: : </p>
+      <p style="color:#f4e33b;">הימורים בסיכון : </p>
+
+
+
+    </div>
+
+
+
+
+
+     <div class="betlisttotalfig">
+
+
+      <p>10000</p>
+      <p>10790</p>
+      <p>790</p>
+      <p style="color:#f4e33b;">0</p>
+
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="betlisttotalholder">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+      
+     </div>
+  </div>
+  <div class="side_block">
+    
+
+<div onclick="location.href = 'disp_sport_live.php';" class="menu-live-btn"><img class="img-menu" src="./images/live-icon.png">ליין רץ</div>
+<div onclick="location.href = 'bet_list.php';" class="menu-mix-live-btn"><i class="img-menu fa fa-list-ol"></i>רשימת הימורים </div>
+
+<div class="menu-clos-open">
+
+<a href="#">תפריט	 <i class="fa menu-indic fa-chevron-down"></i></a>
+
+
+</div>
+
+
+<ul class="menu-list">
+
+<li class="menu-item">
+
+    <span><img class="img-menu img-plus-menu" src="images/menu_expand.png"> כדורגל </span>
+    <span><img class="change-color-icon icon-soccer"></span>
+
+
+    <ul class="sub-menue-sport">
+        <li><a href="disp_sport.php?sport=soccer&amp;time=t" class="menuln">אירועי היום</a></li><li><a href="disp_sport.php?sport=soccer&amp;time=t&amp;date=17-06-2024" class="menuln">17-06-2024</a></li><li><a href="disp_sport.php?sport=soccer&amp;time=t&amp;date=18-06-2024" class="menuln">18-06-2024</a></li><li><a href="disp_sport.php?sport=soccer&amp;time=t&amp;date=19-06-2024" class="menuln">19-06-2024</a></li><li><a href="disp_sport.php?sport=soccer&amp;time=t&amp;date=20-06-2024" class="menuln">20-06-2024</a></li><li><a href="disp_sport.php?sport=soccer&amp;time=t&amp;date=21-06-2024" class="menuln">21-06-2024</a></li>        </ul>
+
+</li>
+
+<!-- //////////////////// end basketball-->
+
+
+
+<!-- //////////////////// basketball-->
+<li class="menu-item">
+
+    <span><img class="img-menu img-plus-menu" src="images/menu_expand.png">כדורסל  </span>
+    <span><img class="change-color-icon icon-basketball"></span>
+
+
+    <ul class="sub-menue-sport">
+
+
+        <li><a href="disp_sport.php?sport=basketball&amp;time=t" class="menuln">אירועי היום</a></li><li><a href="disp_sport.php?sport=basketball&amp;time=t&amp;date=17-06-2024" class="menuln">17-06-2024</a></li><li><a href="disp_sport.php?sport=basketball&amp;time=t&amp;date=18-06-2024" class="menuln">18-06-2024</a></li><li><a href="disp_sport.php?sport=basketball&amp;time=t&amp;date=19-06-2024" class="menuln">19-06-2024</a></li><li><a href="disp_sport.php?sport=basketball&amp;time=t&amp;date=20-06-2024" class="menuln">20-06-2024</a></li><li><a href="disp_sport.php?sport=basketball&amp;time=t&amp;date=21-06-2024" class="menuln">21-06-2024</a></li>
+
+
+    </ul>
+
+</li>
+<!-- //////////////////// end basketball-->
+
+
+<!-- ////////////// tenis
+ -->
+
+<li class="menu-item">
+
+    <span><img class="img-menu img-plus-menu" src="images/menu_expand.png">טניס </span>
+    <span><img class="change-color-icon icon-tennis"></span>
+
+    <ul class="sub-menue-sport">
+
+
+
+        <li><a href="disp_sport.php?sport=tennis&amp;time=t" class="menuln">אירועי היום</a></li><li><a href="disp_sport.php?sport=tennis&amp;time=t&amp;date=17-06-2024" class="menuln">17-06-2024</a></li><li><a href="disp_sport.php?sport=tennis&amp;time=t&amp;date=18-06-2024" class="menuln">18-06-2024</a></li><li><a href="disp_sport.php?sport=tennis&amp;time=t&amp;date=19-06-2024" class="menuln">19-06-2024</a></li><li><a href="disp_sport.php?sport=tennis&amp;time=t&amp;date=20-06-2024" class="menuln">20-06-2024</a></li><li><a href="disp_sport.php?sport=tennis&amp;time=t&amp;date=21-06-2024" class="menuln">21-06-2024</a></li>
+    </ul>
+
+
+
+
+</li>
+<!-- 	////// end tenis
+ -->
+<!-- ////////////// football
+-->
+
+<li class="menu-item">
+
+    <span><img class="img-menu img-plus-menu" src="images/menu_expand.png">פוטבול </span>
+    <span><img class="change-color-icon icon-football"></span>
+
+    <ul class="sub-menue-sport">
+
+
+
+        <li><a href="disp_sport.php?sport=football&amp;time=t" class="menuln">אירועי היום</a></li><li><a href="disp_sport.php?sport=football&amp;time=t&amp;date=17-06-2024" class="menuln">17-06-2024</a></li><li><a href="disp_sport.php?sport=football&amp;time=t&amp;date=18-06-2024" class="menuln">18-06-2024</a></li><li><a href="disp_sport.php?sport=football&amp;time=t&amp;date=19-06-2024" class="menuln">19-06-2024</a></li><li><a href="disp_sport.php?sport=football&amp;time=t&amp;date=20-06-2024" class="menuln">20-06-2024</a></li><li><a href="disp_sport.php?sport=football&amp;time=t&amp;date=21-06-2024" class="menuln">21-06-2024</a></li>
+    </ul>
+
+
+
+
+</li>
+<!-- 	////// end football
+ -->
+
+<!-- ////////////// icehockey
+-->
+
+<li class="menu-item">
+
+    <span><img class="img-menu img-plus-menu" src="images/menu_expand.png">הוקי קרח </span>
+    <span><img class="change-color-icon icon-hockey"></span>
+
+    <ul class="sub-menue-sport">
+
+
+
+        <li><a href="disp_sport.php?sport=icehockey&amp;time=t" class="menuln">אירועי היום</a></li><li><a href="disp_sport.php?sport=icehockey&amp;time=t&amp;date=17-06-2024" class="menuln">17-06-2024</a></li><li><a href="disp_sport.php?sport=icehockey&amp;time=t&amp;date=18-06-2024" class="menuln">18-06-2024</a></li><li><a href="disp_sport.php?sport=icehockey&amp;time=t&amp;date=19-06-2024" class="menuln">19-06-2024</a></li><li><a href="disp_sport.php?sport=icehockey&amp;time=t&amp;date=20-06-2024" class="menuln">20-06-2024</a></li><li><a href="disp_sport.php?sport=icehockey&amp;time=t&amp;date=21-06-2024" class="menuln">21-06-2024</a></li>
+    </ul>
+
+
+
+
+</li>
+<!-- 	////// end football
+ -->
+
+<!-- ////////////// volley ball
+-->
+
+<li class="menu-item">
+
+    <span><img class="img-menu img-plus-menu" src="images/menu_expand.png">כדורעף</span>
+    <span><img class="change-color-icon icon-volleyball"></span>
+
+    <ul class="sub-menue-sport">
+
+
+
+        <li><a href="disp_sport.php?sport=volleyball&amp;time=t" class="menuln">אירועי היום</a></li><li><a href="disp_sport.php?sport=volleyball&amp;time=t&amp;date=17-06-2024" class="menuln">17-06-2024</a></li><li><a href="disp_sport.php?sport=volleyball&amp;time=t&amp;date=18-06-2024" class="menuln">18-06-2024</a></li><li><a href="disp_sport.php?sport=volleyball&amp;time=t&amp;date=19-06-2024" class="menuln">19-06-2024</a></li><li><a href="disp_sport.php?sport=volleyball&amp;time=t&amp;date=20-06-2024" class="menuln">20-06-2024</a></li><li><a href="disp_sport.php?sport=volleyball&amp;time=t&amp;date=21-06-2024" class="menuln">21-06-2024</a></li>
+    </ul>
+
+
+
+
+</li>
+<!-- 	////// end  volley ball
+ -->
+
+<!-- ////////////// regby
+-->
+
+<li class="menu-item">
+
+    <span><img class="img-menu img-plus-menu" src="images/menu_expand.png">רוגבי </span>
+    <span><img class="change-color-icon icon-rugby"></span>
+
+    <ul class="sub-menue-sport">
+
+
+
+        <li><a href="disp_sport.php?sport=rugby&amp;time=t" class="menuln">אירועי היום</a></li><li><a href="disp_sport.php?sport=rugby&amp;time=t&amp;date=17-06-2024" class="menuln">17-06-2024</a></li><li><a href="disp_sport.php?sport=rugby&amp;time=t&amp;date=18-06-2024" class="menuln">18-06-2024</a></li><li><a href="disp_sport.php?sport=rugby&amp;time=t&amp;date=19-06-2024" class="menuln">19-06-2024</a></li><li><a href="disp_sport.php?sport=rugby&amp;time=t&amp;date=20-06-2024" class="menuln">20-06-2024</a></li><li><a href="disp_sport.php?sport=rugby&amp;time=t&amp;date=21-06-2024" class="menuln">21-06-2024</a></li>
+    </ul>
+
+
+
+
+</li>
+<!-- 	////// end  rugby
+ -->
+
+
+<!-- ////////////// chanse
+-->
+<li class="lucky menu-item" onclick="window.location.href='disp_lc.php'"><img class="img-menu img-plus-menu" src="images/menu_expand.png"><a href="disp_lc.php">צ'אנס<img class="change-color-icon icon-luckycard"></a>
+
+
+
+
+
+
+
+</li>
+<!-- 	////// end chanse
+ -->
+
+
+
+
+
+
+
+</ul>
+
+<div class="end_menu"> </div>
+
+
+
+
+
+
+
+
+<div class="wrapper b_betslip b-single">
+<div class="main-title betslip-main-title">
+    <div class="left">
+        כרטיס הימור        </div>
+    <a href="#" id="close-betslip" class="right">X</a>
+</div>
+        <div class="betslip-buttons">
+        <span class="betslip-button active">סינגל</span>
+        <span class="betslip-button">משולבים</span>
+    </div>
+    <div id="betslipt-content"></div>
+<div id="b-mix-input">
+    <div class="b-mix-bets__system"></div>
+    <div class="b-mix-bets__info">
+        <div><span class="left">ליין</span><i class="right b-mix-bets__name"></i></div>
+        <div><span class="left">מינ</span><i class="right b-min">$ <i>0</i></i></div>
+        <div><span class="left">מקס</span><i class="right b-max">$ <i>0</i></i></div>
+        <div class="hide"><span class="left">Total cost</span><i class="right b-total-cost">$ <i>0</i></i></div>
+    </div>
+    <div class="b-mix-bets__win">
+        <div class="left">
+            <input type="text" value="">
+        </div>
+        <div class="right">
+                                <span><u>:רווח</u> <i>0</i></span>
+                        </div>
+    </div>
+</div>
+<a class="button place-bet" href="#">שלח</a>
+</div>
+
+<script>
+
+var betObj = {};
+
+$(function(){
+
+    var betObject = {};
+
+    var
+        status 	= false,
+        ajaxLoader,
+        ajaxTimeout,
+        statusTimeout = null,
+        responseData = "",
+        oddType = "1",
+        userType = "1",
+        language = "3",
+        teaser = 'false',
+        maxTickets = 10,
+        actions = {
+            betType 	: teaser == "false" ? "single" : "mix",
+            betStatus 	: "",
+            betOpen 	: "close",
+            betLiga		: {
+                status  : true,
+                ligs 	: []
+            },
+            mixData		: {},
+            system		: 1,
+            systemOdd	: [],
+            server      : true
+        };
+
+    var sportTitles = {
+        soccer : 		"כדורגל",
+        basketball : 	"כדורסל",
+        tennis : 		"טניס",
+        football : 		"פוטבול",
+        baseball : 		"בייסבול",
+        icehockey : 	"הוקי קרח",
+        volleyball : 	"כדורעף",
+        handball : 	    "Handball",
+        chance : 		"צ'אנס",
+        lotto : 		"Lotto",
+        outright : 		"מיוחדים"
+    };
+
+    var ticketTranslate = {
+        win: 	':רווח',
+        risk: 	':הפסד'
+    };
+
+    if(actions.betType == "mix") {
+        setSessionMix(true);
+    }
+    else {
+        setSessionMix(false);
+    }
+
+    if(userType > 1) {
+        $(".b_betslip").addClass("betslip-admin");
+    }
+
+    var combinations = (function () {
+        var res = [];
+
+        function combinations(arr, k, start, idx, current) {
+            if (idx === k) {
+                res.push(current.slice());
+                return;
+            }
+            for (var i = start; i < arr.length; i += 1) {
+                current[idx] = arr[i];
+                combinations(arr, k, i + 1, idx + 1, current);
+            }
+        }
+
+        return function (arr, k) {
+            res = [];
+            combinations(arr, k, 0, 0, []);
+            var temp = res;
+            res = null;
+            return temp;
+        };
+    }());
+
+    function getGameTime( date ) {
+        return "";
+        return '<span>ליין רץ</span>';
+        if(! date) return;
+        date = date.split(' ');
+        var string = '';
+
+        if(date[0] == '1H') string = '<span>' + date[1] + ' מינ</span><i>—</i>1st Half';
+        else if(date[0] == '2H') string = '<span>' + date[1] + ' מינ</span><i>—</i>2st Half';
+        else if(date[0] == 'H.Tim') string = 'Half Time';
+        else string = '<span>ליין רץ</span>';
+
+        return string;
+    }
+
+    function blink( elem ) {
+        var i = 0;
+        var timer = setInterval(function(){
+            if(elem.is(":hidden")) elem.css("display", "inline-block");
+            else elem.hide();
+
+            if(actions.betType == "mix") {
+                if($("#b-mix-input .b-mix-bets__name").is(":hidden")) {
+                    $("#b-mix-input .b-mix-bets__name").css("display", "inline-block");
+                }
+                else $("#b-mix-input .b-mix-bets__name").hide();
+            }
+
+            if(i >= 6) {
+                clearInterval(timer);
+                if(elem.is(":hidden")) elem.css("display", "inline-block");
+                if($("#b-mix-input .b-mix-bets__name").is(":hidden")) {
+                    $("#b-mix-input .b-mix-bets__name").css("display", "inline-block");
+                }
+                elem.removeClass("blink");
+            }
+            i++;
+        }, 300);
+    }
+
+    function blinkInput( elem ) {
+        elem.addClass("animated bounceBack");
+
+        setTimeout(function(){
+            elem.removeClass("animated bounceBack");
+        }, 800);
+    }
+
+    function popupMessage( message ) {
+//			$("#success p").text( message );
+//			$.fancybox.open([
+//			    {
+//			        href : '#success'
+//			    }
+//			], {
+//			    padding : 0,
+//			    height: "auto"
+//			});
+        alert( message );
+    }
+
+    function showMessage( data ) {
+
+        popupMessage( data.error_message );
+
+        var betDIV = $( "div[class~='bet-" + data.id + "']" );
+        betDIV.removeClass("b-sent b-disabled b-suspend");
+        $(".b_loader", betDIV).remove();
+        $(".close-button", betDIV).show();
+
+        if(actions.betType == "single") {
+            if($(".button.place-waiting", betDIV).length) {
+                $(".button.place-waiting", betDIV).remove();
+            }
+
+            $(".b-bets__info", betDIV).show();
+            $(".b-bets__win input", betDIV).val( data.input_value ).trigger("keyup").removeAttr("disabled");
+        }
+        else {
+            if($("#b-mix-input .button.place-waiting").length) {
+                $("#b-mix-input .button.place-waiting").remove();
+            }
+
+            if(!$(".b_betslip").hasClass("b-mix")) {
+                $(".b_betslip").addClass("b-mix")
+            }
+
+            $(".close-button:hidden").show();
+            $("#b-mix-input .b-mix-bets__info").show();
+            $(".b-bets").removeClass("b-sent");
+            $(".b-mix-bets__win input").val( data.input_value ).trigger("keyup").removeAttr("disabled");
+
+            deleteMixData();
+        }
+
+        $("#close-betslip").show();
+
+        checkButton();
+
+    }
+
+    function getHTML( v ) {
+
+        if( ! betObject[v.id]) return '<div class="b_loader"></div>';
+        if(!v.home_team || v.home_team == "null") return '<div class="b_loader"></div>';
+
+        betObject[v.id]['home_team'] = v.home_team;
+        betObject[v.id]['away_team'] = v.away_team;
+        betObject[v.id]['league'] 	 = v.league;
+        betObject[v.id]['date'] 	 = v.date;
+        betObject[v.id]['score_h'] 	 = v.score_h;
+        betObject[v.id]['score_a'] 	 = v.score_a;
+        betObject[v.id]['max'] 	 	 = v.max;
+        betObject[v.id]['min'] 	 	 = v.min;
+        betObject[v.id]['max_mix'] 	 = v.max_mix;
+        betObject[v.id]['max_sys'] 	 = v.max_sys;
+        betObject[v.id]['tizopt'] 	 = v.tizopt;
+
+        //Translate
+        betObject[v.id]['home_team_title'] 	= v.home_team_title;
+        betObject[v.id]['away_team_title'] 	= v.away_team_title;
+        betObject[v.id]['league_title'] 	= v.league_title;
+
+        var sign = "";
+
+        if(oddType == "2") {
+
+            if(v.sport == "Chance") {
+                v.odd_opt = odds(v.odd);
+            }
+
+            var sign = String( v.odd_opt ).charAt(0);
+            if(sign != "-") v.odd_opt = v.odd;
+            else v.odd_opt = v.odd_opt * -1;
+        }
+
+        var eventTime = getGameTime( v.date );
+
+        if(v.sport != "Soccer" || (v.timetype != "l" && v.timetype != "l-sp")) {
+            v.score_h = "-";
+            v.score_a = "-";
+            eventTime = "";
+        }
+
+        var html = "", sportClass = "", adminClass = "";
+
+        if(v.sport == "Chance") sportClass = " bet-chance";
+        else if(v.sport == "Lotto") sportClass = " bet-lotto";
+        else if(v.sport.toLowerCase() == "outright")  sportClass = " bet-outright";
+
+        html += '<div class="b-bets bet-' + v.id + sportClass + '" data-id="' + v.id + '">';
+        html += '<div class="b-bets__title">';
+        html += '<div class="left">';
+        html += sportTitles[v.sport.toLowerCase()];
+        html += '</div>';
+        html += '<div class="right">';
+        html += '<a class="close-button" data-id="' + v.id + '" href="#">X</a>';
+        html += '</div>';
+        html += '</div>';
+        html += '<div class="b-bets__team">';
+        html += '<span>' + v.league_title + '</span>';
+        html += '<div class="b-bets__score">';
+        html += '<span class="left b-home_team">' + v.home_team_title + '</span>';
+        html += '<i class="right b-score_h">' + v.score_h + '</i>';
+        html += '</div>';
+        html += 'vs';
+        html += '<div class="b-bets__score">';
+        html += '<span class="left b-away_team">' + v.away_team_title + '</span>';
+        html += '<i class="right b-score_a">' + v.score_a + '</i>';
+        html += '</div>';
+        html += '</div>';
+        html += '<div class="b-bets__time b-date">';
+        html += eventTime;
+        html += '</div>';
+
+        if(String(v.description).length > 42) {
+            html += '<div class="b-bets__name b-description b-description-big">';
+        }
+        else {
+            html += '<div class="b-bets__name b-description">';
+        }
+        html += v.description;
+        html += '</div>';
+        html += '<div class="b-bets__win" data-odd="' + v.odd_opt + '" data-sign="' + sign + '">';
+        html += '<div class="left">';
+        html += '<input type="text" value=""/>';
+        html += '</div>';
+        html += '<div class="right">';
+
+        if(sign == "-") html += '<span><u>' + ticketTranslate.risk + '</u> <i>0</i></span>';
+        else 			html += '<span><u>' + ticketTranslate.win + '</u> <i>0</i></span>';
+
+        html += '</div>';
+        html += '</div>';
+        html += '<div class="b-bets__info">';
+        html += '<div><span class="left">מינ</span><i class="right b-min">$ <i>' + v.min + '</i></i></div>';
+        html += '<div><span class="left">מקס</span><i class="right b-max">$ <i>' + v.max + '</i></i></div>';
+        html += '</div>';
+        html += '</div>';
+
+        return html;
+    }
+
+    function amountInObject() {
+        var i = 0;
+        $.each(betObject, function(){
+            i++;
+        });
+        return i;
+    }
+
+    function checkLiveStatus() {
+        var status = "approved";
+        $.each(betObject, function(k,v){
+            if(v.timetype == "l" || v.timetype == "l-sp") status = "waiting_accept";
+        });
+        return status;
+    }
+
+    function checkBetLiga() {
+        actions.betLiga.status = true;
+        actions.betLiga.ligs = [];
+        $.each(betObject, function(k,v){
+            if(v.liga_status == "Off") {
+                actions.betLiga.status = false;
+                actions.betLiga.ligs.push('"' + v.league_title + '"');
+            }
+        });
+    }
+
+    function approvedStatuses() {
+        var approveStatus = 1;
+        $.each(betObject, function(k,v){
+            if(v.status == "approved") approveStatus++;
+            else if(v.status == "reject") return false;
+            else if(v.status == "error") return false;
+        });
+        var aio = amountInObject();
+        var aStatus = checkLiveStatus();
+        if(approveStatus == aio || aStatus == "approved") return true;
+        else return false;
+    }
+
+    function errorStatuses() {
+        var errorStatus = 0;
+        $.each(responseData, function(k,v){
+            if(v.status == "error") errorStatus++;
+        });
+        return errorStatus > 0;
+    }
+
+    function waitingStatuses() {
+        var waitingStatus = 0;
+        $.each(responseData, function(k,v){
+            if(v.status == "waiting_accept") waitingStatus++;
+        });
+        return waitingStatus > 0;
+    }
+
+    function addBetID() {
+        if(!$.isEmptyObject(betObject))
+        {
+            $.each(betObject, function (k,bet) {
+                if(bet.betid == undefined) return;
+                $('#betslipt-content [data-id="' + bet.id + '"] .bet-id .right').text(bet.betid).parent().show();
+            });
+        }
+    }
+
+    function allStatuses() {
+        $.each(betObject, function(k,v){
+            if(v.status != "approved" || v.status != "reject" || v.status != "error") return false;
+        });
+        return true;
+    }
+
+    function removeOpeningBet() {
+        $.each(betObject, function(k,v){
+            if(v.status == "opening") {
+
+                var arrayID = [];
+
+                $.each(responseData, function(key,val) {
+                    arrayID.push(val.id);
+                });
+
+                if( $.inArray(k, arrayID) == -1 ) {
+                    delete betObject[k];
+                    return false;
+                }
+
+            }
+        });
+        return true;
+    }
+
+    function gameGone() {
+        clearInterval(ajaxLoader);
+        var i = 0;
+        ajaxLoader = setInterval(function() {
+            if($(".b_loader").length != 0) {
+                if(i >= 20) {
+                    clearInterval(ajaxLoader);
+
+                    $(".b_loader").each(function() {
+
+                        var
+                            html 	= '<div class="b-game-gone">';
+                        html   += '<div class="b-bets__title">';
+                        html   += '<div class="right">';
+                        html += '<a class="close-button" href="#">X</a>';
+                        html   += '</div>';
+                        html   += '</div>';
+                        html   += '<h2>Line gone</h2>';
+                        html   += '</div>';
+
+                        $(this).after(html);
+                        $(this).remove();
+                    });
+
+                }
+            }
+            else {
+                clearInterval(ajaxLoader);
+            }
+            i++;
+        }, 1000);
+    }
+
+    function accordionLive(status) {
+        if(!$(".menu-list").is(":hidden") && status == "Close") {
+            $(".menu-clos-open").trigger("click");
+        }
+        else if($(".menu-list").is(":hidden") && status == "Open") {
+            $(".menu-clos-open").trigger("click");
+        }
+    }
+
+    function openBetslip() {
+        var loaders = '', amount = amountInObject();
+        for(var i = 0, l = amount - $(".b-bets, #betslipt-content > .b_loader, .b-game-gone").length; i < l; i++) {
+            loaders += '<div class="b_loader"></div>';
+        }
+        if(loaders == "") loaders = '<div class="b_loader"></div>';
+        $(".b_betslip #betslipt-content").append( loaders );
+
+        checkButton();
+
+        $(".b_betslip").show();
+        gameGone();
+
+        actions.betOpen = "open";
+        actions966.ticket = "open";
+        accordionLive("Close");
+    }
+
+    function closeBetslip() {
+        betObject 			= {};
+        betObj 				= {};
+        actions.betType 	= teaser == "false" ? "single" : "mix";
+        actions.betStatus 	= "";
+        actions.betOpen 	= "close";
+        actions.mixData 	= {};
+        actions966.ticket 	= "close";
+        $.cookie("bet_type", actions.betType);
+        if(actions.betType == "single") {
+            $(".b_betslip").hide().removeClass("b-mix").addClass("b-single");
+        }
+        else {
+            $(".b_betslip").hide();
+        }
+        $(".b_betslip .betslip-buttons span").removeClass("active");
+        $(".b_betslip .betslip-buttons span:first-child").addClass("active");
+        $(".button.place-accept").remove();
+        $("#b-mix-input .button").remove();
+        $("#b-mix-input .b-mix-bets__info").show();
+        $("#b-mix-input input").removeAttr("disabled");
+        $("[data-bet]").removeClass("td-active");
+        $("#b-mix-input input").val("");
+        $("#b-mix-input .b-mix-bets__win i").text(0);
+        /*if(!$(".live_online_block .open-button.open-arrow").hasClass("opened")) {
+            $(".live_online_block .open-button.open-arrow").trigger("click");
+        }*/
+        if($(".live_online_block").is(":hidden") && !$(".live_online_block").hasClass("live_online_block-empty")) {
+            $(".live_online_block").show();
+        }
+        accordionLive("Open");
+
+        if(actions.betType == 'single')
+        {
+            setSessionMix(false);
+
+        }
+    }
+
+    function clearTicket( data ) {
+        var p = $( "div[class~='bet-" + data.id + "']" );
+        $("input", p).removeAttr("disabled");
+        if(p.hasClass('b-disabled')) p.removeClass('b-disabled b-suspend');
+        if($(".button.place-accept").length == 0 && $(".button.place-bet").hasClass("button-disabled")) {
+            $(".button.place-bet").removeClass("button-disabled");
+        }
+    }
+
+    function checkStatus() {
+        if($.cookie("bet_type") && teaser == "false") {
+            if($.cookie("bet_type") == "mix") {
+                var checking = setInterval(function(){
+                    if($("#betslipt-content > .b_loader").length == 0) {
+                        clearInterval(checking);
+                        actions.betType == "single";
+                        changeBetType();
+
+                        if(actions.system > 1) {
+                            $("#sys" + actions.system).trigger("click");
+                            $(".b-mix-bets__win input").removeAttr("disabled").trigger("keyup").attr("disabled", true);
+                            $(".b-mix-bets__system :radio").attr("disabled", true);
+                        }
+
+                        actions.server = true;
+                    }
+                }, 25);
+            }
+            else
+            {
+                actions.server = true;
+            }
+        }
+        else
+        {
+            actions.server = true;
+        }
+    }
+
+    function checkWaitingButton() {
+        statusTimeout = setTimeout(function(){
+            var count = 0, st = 0;
+            $.each(betObject, function(i,v){
+                count++;
+                if(v.status == "waiting_accept") {
+                    if($("[class~='bet-" + v.id + "'] .button.place-waiting").length == 0) {
+                        $("[class~='bet-" + v.id + "'] .button.place-waiting").remove();
+                        $("[class~='bet-" + v.id + "'] .b-bets__info")
+                            .after('<a class="button place-waiting" href="#">בהמתנה</a>');
+                        st++;
+                    }
+                    else {
+                        st++;
+                    }
+                }
+            });
+
+            if(count == st) {
+                clearTimeout(statusTimeout);
+            }
+            else {
+                statusTimeout = setTimeout(checkWaitingButton, 1000);
+            }
+        }, 1000);
+    }
+
+    function changeBetType() {
+        var
+            p 		= $(".b_betslip"),
+            tikets 	= $(".b-bets, .b-game-gone", p),
+            status  = true;
+
+        if(actions.betType == "single") {
+
+            checkBetLiga();
+
+            // Mix events
+
+            if(tikets.length < 2) {
+                popupMessage( "You can't make mix with one events" );
+                return false;
+            }
+
+            if(!checkMixOnSport('chance')) {
+                popupMessage( "You can't make mix with chance events" );
+                return false;
+            }
+
+            if(!checkMixOnSport('lotto')) {
+                popupMessage( "You can't make mix with lotto events" );
+                return false;
+            }
+
+            if(!checkMixOnSport('outright')) {
+                popupMessage( "You can't make mix with outright events" );
+                return false;
+            }
+
+            if(!checkMixOnSpecial()) {
+                popupMessage( "You can't make mix with special events" );
+                return false;
+            }
+
+            status = checkMixOnOneEvent();
+            if(!status) {
+                popupMessage( "You can't make mix with the same events" );
+                return false;
+            }
+
+            if(!actions.betLiga.status) {
+                popupMessage( "You can't make mix because liga " + actions.betLiga.ligs.join(", ") + " are forbidden for mix" );
+                return false;
+            }
+
+            insertMixData();
+
+            p.removeClass("b-single").addClass("b-mix");
+
+            actions.betType = "mix";
+            setSessionMix(true);
+        }
+        else {
+
+            // Single events
+
+            p.removeClass("b-mix").addClass("b-single");
+
+            actions.betType = "single";
+            setSessionMix(false);
+        }
+
+        $.cookie('bet_type', actions.betType);
+
+        if(actions.betType == "single")
+            $(".betslip-buttons .betslip-button").eq(0).addClass("active").siblings().removeClass("active");
+        else
+            $(".betslip-buttons .betslip-button").eq(1).addClass("active").siblings().removeClass("active");
+
+
+        checkButton();
+    }
+
+    function updateData( response ) {
+        $.each(response, function(k,v){
+
+            var status = "opening";
+
+            if(
+                v.status == "waiting_accept" ||
+                v.status == "approved" ||
+                v.status == "reject" ||
+                v.status == "error"
+            ) {
+                status = "opening_waiting_accept";
+            }
+
+            betObject[v.id] = {
+                "status"		: status,
+                "id"			: v.id,
+                "bet" 			: v.bet,
+                "betmain" 		: v.betmain,
+                "opt" 			: v.opt,
+                "opt_x" 		: v.opt_x,
+                "event" 		: v.event,
+                "odd" 			: v.odd,
+                "odd_x" 		: v.odd_x,
+                "timetype" 		: v.timetype,
+                "sport" 		: v.sport,
+                "home_team"		: v.home_team,
+                "away_team"		: v.away_team,
+                "league"		: v.league,
+                "date"			: v.date,
+                "min"			: v.min,
+                "max"			: v.max,
+                "max_mix"		: v.max_mix,
+                "max_sys"		: v.max_sys,
+                "bettype"		: v.bettype,
+                "liga_status"	: v.liga_status,
+                "tizopt"		: v.tizopt
+            };
+
+            if(v.description !== undefined) {
+                betObject[v.id]['away_team_title'] = v.away_team_title;
+                betObject[v.id]['home_team_title'] = v.home_team_title;
+                betObject[v.id]['league_title'] = v.league_title;
+                betObject[v.id]['description'] = v.description;
+                betObject[v.id]['score_a'] = v.score_a;
+                betObject[v.id]['score_h'] = v.score_h;
+            }
+
+            if(v.reload !== undefined) {
+                betObject[v.id]['reload'] = v.reload;
+            }
+
+            betObj[v.id] = {};
+
+            if(status == "opening_waiting_accept") {
+
+                var mix_odd = 1;
+                $.each(betObject, function(k,v) {
+                    mix_odd = mix_odd * v.odd;
+                });
+
+                betObject[v.id]['betid'] 		= v.betid;
+                betObject[v.id]['score_h'] 		= v.score_h;
+                betObject[v.id]['score_a'] 		= v.score_a;
+                betObject[v.id]['stake'] 		= v.stake;
+                betObject[v.id]['input_value'] 	= v.input_value;
+                betObject[v.id]['stake_d'] 	= v.stake_d;
+                betObject[v.id]['mix_odd'] 	= mix_odd.toFixed(2);
+            }
+
+            if(v.mix_data !== undefined && v.mix_data.system !== undefined) {
+                betObject[v.id]['system'] = v.mix_data.system;
+            }
+            else if(v.system !== undefined) {
+                betObject[v.id]['system'] = v.system;
+            }
+
+            v.status = status;
+        });
+
+        return response;
+    }
+
+    function changeData( data ) {
+        var p = $( "div[class~='bet-" + data.id + "']" ), className = "";
+
+        if(data.sport == "chance" || data.sport == "lotto" || data.sport == "outright") {
+            data["live_data"]['score_h'] = "-";
+            data["live_data"]['score_a'] = "-";
+            data["live_data"]['date'] = "-";
+        }
+
+        betObject[data.id]['score_h'] 	= data.live_data.score_h;
+        betObject[data.id]['score_a'] 	= data.live_data.score_a;
+        betObject[data.id]['date'] 		= data.live_data.date;
+        betObject[data.id]['odd'] 		= data.change;
+        betObject[data.id]['date'] 		= data.date;
+        betObject[data.id]['odd_x'] 	= data.odd_x;
+        betObject[data.id]['tizopt'] 	= data.tizopt;
+
+        if(data.reload !== undefined) {
+            betObject[data.id]['reload'] = data.reload;
+        }
+
+        //if(p.hasClass('b-disabled')) p.removeClass('b-disabled b-suspend');
+
+        if(data.change > data.odd) className = "increace animated bounceDescrGreen";
+        else if(data.change < data.odd) className = "reduce animated bounceDescrRed";
+
+        var dataOdd = data.change, inputOdd = data.change;
+        if(oddType == "2") {
+            dataOdd = odds(dataOdd);
+            if(inputOdd < 2) {
+                inputOdd = dataOdd * -1;
+                $(".b-bets__win u", p).text(ticketTranslate.risk);
+                $(".b-bets__win", p).attr("data-sign", "-");
+            }
+            else {
+                $(".b-bets__win", p).attr("data-sign", "+");
+                $(".b-bets__win u", p).text(ticketTranslate.win);
+            }
+        }
+
+        var
+            score_h = data.live_data.score_h,
+            score_a = data.live_data.score_a;
+
+        if(data.sport != "soccer" || (data.timetype != "l" && data.timetype != "l-sp")) {
+            score_h = "-";
+            score_a = "-";
+        }
+
+        if(language == '3' && oddType == "2") {
+            dataOdd = String(dataOdd);
+            if(dataOdd.charAt(0) == '-' || dataOdd.charAt(0) == '+') {
+                var symbol = dataOdd.substr(0, 1);
+                var string = $.trim(dataOdd.substr(1));
+                dataOdd = string + " " + symbol;
+            }
+        }
+
+        $(".b-score_h", p).html( score_h );
+        $(".b-score_a", p).html( score_a );
+        $(".b-date", p).html( getGameTime( data.live_data.date ) );
+        $(".b-description", p).removeClass("increace reduce animated bounceDescrRed bounceDescrGreen").addClass(className).find("span").html( "@ " + dataOdd );
+        $(".b-bets__win", p).attr("data-odd", inputOdd );
+        $(".b-bets__info .b-min i", p).html( data.min );
+        $(".b-bets__info .b-max i", p).html( data.max );
+
+        $(".b-bets__win input", p).trigger("keyup").removeAttr("disabled");
+        $(".b-mix-bets__win input", p).trigger("keyup").removeAttr("disabled");
+
+        if(actions.betType == "mix") insertMixData();
+
+        $(".blink").each(function(){
+            blink( $(this) );
+        });
+    }
+
+    function lineChange( data ) {
+        if(data.change === false) return;
+
+        changeData( data );
+
+        $(".button.place-bet").addClass("button-disabled");
+        if($(".button.place-accept").length == 0) {
+            $(".button.place-bet").before('<a class="button place-accept" href="#">אשר שינויים בליין</a>');
+        }
+    }
+
+    function lineSuspend( data ) {
+        $( "div[class~='bet-" + data.id + "']" )
+            .addClass("b-disabled b-suspend")
+            .find(".b-bets__win input").attr("disabled", true);
+
+        if(actions.betType == "single") {
+
+            if($(".b-disabled, .b-sent").length >= $(".b-bets").length) {
+                $(".button.place-bet").addClass("button-disabled");
+                if($(".button.place-accept").length != 0) $(".button.place-accept").remove();
+            }
+            else {
+                $(".button.place-bet").removeClass("button-disabled");
+                if($(".button.place-accept").length != 0) $(".button.place-accept").remove();
+            }
+
+        }
+
+        else {
+
+            if($(".b-disabled, .b-sent, .b-game-gone").length > 0) {
+                $(".button.place-bet").addClass("button-disabled");
+                if($(".button.place-accept").length != 0) $(".button.place-accept").remove();
+            }
+            else {
+                $(".button.place-bet").removeClass("button-disabled");
+                if($(".button.place-accept").length != 0) $(".button.place-accept").remove();
+            }
+
+        }
+
+    }
+
+    function lineCommands( data ) {
+        var betDIV = $("[class~='bet-" + data.id + "']");
+        betDIV
+            .addClass("b-disabled")
+            .append('<div class="b_loader"></div>');
+
+        if(actions.betType == "single") {
+            $(".b-bets__win input", betDIV).attr("disabled", true);
+        }
+        else {
+            $("#b-mix-input .b-mix-bets__win input").attr("disabled", true);
+        }
+
+        $(".close-button", betDIV).hide();
+
+        if(actions.betStatus == "") {
+            actions.betStatus = "sent";
+        }
+
+        $("#close-betslip").hide();
+
+        checkButton();
+    }
+
+    function lineSend( data ) {
+        var betDIV = $( "div[class~='bet-" + data.id + "']" );
+        betDIV.addClass("b-sent").removeClass("b-disabled b-suspend");
+        $(".b_loader", betDIV).remove();
+        $(".close-button", betDIV).hide();
+        $("#close-betslip").hide();
+
+        if(actions.betType == "single" && ($.cookie("bet_type") !== undefined && $.cookie("bet_type") != "mix")) {
+
+            $(".b-bets__info", betDIV).hide();
+
+            if(oddType == "1") {
+
+                $(".b-bets__win input", betDIV).val(data.stake).trigger("keyup").attr("disabled", true);
+            }else{
+                if(data.odd < 2) {
+                    var am_odd = data.stake * (data.odd -1);
+                    $(".b-bets__win input", betDIV).val(Math.round(am_odd)).trigger("keyup").attr("disabled", true);
+                } else{
+                    $(".b-bets__win input", betDIV).val(data.input_value).trigger("keyup").attr("disabled", true);
+                }
+            }
+            if($(".button.place-waiting", betDIV).length == 0) {
+                $(".button.place-waiting", betDIV).remove();
+                $(".b-bets__info", betDIV).after('<a class="button place-waiting" href="#">בהמתנה</a>');
+            }
+
+        }
+
+        else {
+
+            if(data.system !== undefined && data.system > 1) {
+                actions.system = data.system;
+            }
+
+            $(".b-bets .button").remove();
+            $("#b-mix-input .b-mix-bets__info").hide();
+
+            if(oddType == "1") {
+                $("#b-mix-input .b-mix-bets__win input").val(data.stake_d).trigger("keyup").attr("disabled", true);
+            } else {
+                if (data.mix_odd < 2) {
+                    var am_odd = data.stake_d * (data.mix_odd - 1);
+                    $("#b-mix-input .b-mix-bets__win input").val(Math.round(am_odd)).trigger("keyup").attr("disabled", true);
+                } else {
+                    $("#b-mix-input .b-mix-bets__win input").val(data.stake_d).trigger("keyup").attr("disabled", true);
+                }
+            }
+
+            if($("#b-mix-input .button.place-waiting").length == 0) {
+                $("#b-mix-input .b-mix-bets__info").after('<a class="button place-waiting" href="#">בהמתנה</a>');
+            }
+
+        }
+
+        checkWaitingButton();
+
+        if(actions.betStatus == "") {
+            actions.betStatus = "sent";
+        }
+
+        checkButton();
+    }
+
+    function lineApproved( data ) {
+        var betDIV = $( "div[class~='bet-" + data.id + "']" );
+        betDIV.addClass("b-sent").removeClass("b-disabled b-suspend");
+        $(".b_loader", betDIV).remove();
+
+        if(actions.betType == "single") {
+
+            $(".close-button", betDIV).show();
+            $(".b-bets__info", betDIV).hide();
+            if(oddType == "1") {
+                $(".b-bets__win input", betDIV).val(data.stake).trigger("keyup").attr("disabled", true);
+            }else{
+                if(data.odd < 2) {
+                    var am_odd = data.stake * (data.odd -1);
+                    $(".b-bets__win input", betDIV).val(Math.round(am_odd)).trigger("keyup").attr("disabled", true);
+                } else{
+                    $(".b-bets__win input", betDIV).val(data.input_value).trigger("keyup").attr("disabled", true);
+                }
+            }
+            $(".button.place-waiting", betDIV).remove();
+            $(".b-bets__info", betDIV).after('<a class="button place-approved" href="#">הימור אושר</a>');
+
+        }
+
+        else {
+
+            var appStatus = approvedStatuses();
+
+            if(appStatus == true) {
+
+                $(".b-bets .button").remove();
+                $(".close-button").show();
+                $("#b-mix-input .b-mix-bets__info").hide();
+                if(oddType == "1") {
+                    $("#b-mix-input .b-mix-bets__win input").val(data.stake_d).trigger("keyup").attr("disabled", true);
+                } else {
+                    if (data.mix_odd < 2) {
+                        var am_odd = data.stake_d * (data.mix_odd - 1);
+                        $("#b-mix-input .b-mix-bets__win input").val(Math.round(am_odd)).trigger("keyup").attr("disabled", true);
+                    } else {
+                        $("#b-mix-input .b-mix-bets__win input").val(data.stake_d).trigger("keyup").attr("disabled", true);
+                    }
+                }
+                $("#b-mix-input .button.place-waiting").remove();
+                if($("#b-mix-input .button.place-approved").length == 0) {
+                    $("#b-mix-input .button.place-approved").remove();
+                    $("#b-mix-input .b-mix-bets__info").after('<a class="button place-approved" href="#">הימור אושר</a>');
+                }
+
+            }
+
+        }
+
+        if(actions.betStatus == "") {
+            actions.betStatus = "sent";
+        }
+
+        $("#close-betslip").show();
+
+        checkButton();
+    }
+
+    function lineReject( data ) {
+        var betDIV = $( "div[class~='bet-" + data.id + "']" );
+
+        if(actions.betType == "single") {
+
+            $(".close-button", betDIV).show();
+            $(".button.place-waiting", betDIV).remove();
+            $(".button.place-reject", betDIV).remove();
+            $(".b-bets__info", betDIV).after( '<a class="button place-reject" href="#">נדחה</a>' );
+
+        }
+
+        else {
+
+            $(".close-button").show();
+            $(".b-bets .button").remove();
+            $("#b-mix-input .b-mix-bets__win input").val( data.input_value ).trigger("keyup").attr("disabled", true);
+            $("#b-mix-input input").attr("disabled", true);
+            $("#b-mix-input .button.place-waiting").remove();
+            if($("#b-mix-input .button.place-reject").length == 0) {
+                $("#b-mix-input .button.place-reject").remove();
+                $("#b-mix-input .b-mix-bets__info").after( '<a class="button place-reject" href="#">נדחה</a>' );
+            }
+
+        }
+
+        $("#close-betslip").show();
+
+        checkButton();
+    }
+
+    function changeDataAfterUpdate(data) {
+        var p = $( "div[class~='bet-" + data.id + "']" );
+        $(".b-bets__info .b-min i", p).html( data.min );
+        $(".b-bets__info .b-max i", p).html( data.max );
+    }
+
+    function clearMixData() {
+        $.each(betObject, function(k,v) {
+            v.status = "waiting_for_send";
+            delete v.mix_data;
+        });
+    }
+
+    function deleteMixData() {
+        $.each(betObject, function(k,v) {
+            delete betObject[k]['mix_data'];
+        });
+    }
+
+    function checkButton() {
+
+        if(actions.betType == "single") {
+
+            if($(".b-sent, .b-disabled, .b-game-gone").length >= $(".b-bets, .b-game-gone").length) {
+                $(".button.place-bet").addClass("button-disabled");
+            }
+            else {
+                if($(".button.place-accept").length == 0) {
+                    $(".button.place-bet").removeClass("button-disabled");
+                }
+
+                if($(".b-sent").length == 0) {
+                    actions.betStatus = "";
+                }
+            }
+
+        }
+
+        else {
+
+            if($(".b-sent, .b-disabled, .b-game-gone, .b_loader").length > 0) {
+                $(".button.place-bet").addClass("button-disabled");
+
+                if($(".b-game-gone").length > 0) {
+                    $("#b-mix-input").hide();
+                }
+            }
+            else {
+                $("#b-mix-input").show();
+
+                if($(".button.place-accept").length == 0) {
+                    $(".button.place-bet").removeClass("button-disabled");
+                }
+
+                if($(".b-sent").length == 0) {
+                    actions.betStatus = "";
+                }
+            }
+
+            if(amountInObject() < 3) {
+                actions.system = 1;
+                $("#sys" + actions.system).trigger("click");
+            }
+
+            insertMixData();
+            $(".b-mix-bets__win input").trigger("keyup");
+
+        }
+
+        if($("#betslipt-content .b-bets, #betslipt-content > .b_loader, #betslipt-content > .b-game-gone").length == 0) {
+            closeBetslip();
+        }
+        else {
+            if($("#betslipt-content .b-bets, #betslipt-content > .b-game-gone").length < 2) {
+                $('.betslip-button:first-child').trigger("click");
+            }
+        }
+
+    }
+
+    function getMixData() {
+
+        var description = 0, min = 0, max = 0, max_mix = 0, i = 0;
+
+        $.each(betObject, function(k,v) {
+
+            if(v.status == "opening") return;
+
+            if(i == 0) {
+                min 		= v.min;
+                max 		= v.max;
+                max_mix 	= v.max_mix;
+                description = v.odd;
+
+                if(teaser == "true") return true;
+            }
+            else {
+                if(v.min < min) min = v.min;
+                if(v.max < max) max = v.max;
+                if(v.max_mix < max_mix) max_mix = v.max_mix;
+
+                description *= v.odd;
+            }
+
+            i++;
+
+        });
+
+        if(max > max_mix) max = max_mix;
+
+        if(min > max) min = max;
+
+        description = parseFloat(description).toFixed(2);
+
+        // if(description >= 100) description = 100;
+
+        var sign = "+", odd = description;
+
+        if(oddType == "2") {
+            description = String( odds(description) );
+            sign = description.charAt(0);
+            if(sign == "-") odd = description * -1;
+        }
+
+        description = "@ " + description;
+
+        return {
+            "description" 	: description,
+            "max" 			: max,
+            "min" 			: min,
+            "sign"			: sign,
+            "odd"			: odd
+        };
+    }
+
+    function getMixDataFromSystem() {
+
+        var description = 0, min = 0, max = 0, max_sys = 0, i = 0, tickets = amountInObject(), tmp = [];
+
+        $.each(betObject, function(k,v) {
+            var bet = [Number(v.min), Number(v.max), Number(v.max_sys), v.odd];
+            tmp.push(bet);
+        });
+
+        tmp = combinations(tmp, Number(actions.system));
+
+        actions.systemOdd = [];
+
+        $.each(tmp, function(key,value) {
+            var odd = 0;
+            $.each(value, function(k, v) {
+                if(odd === 0) odd = v[3];
+                else odd *= v[3];
+
+                if(min === 0 || v[0] < min) min = v[0];
+                if(max === 0 || v[1] < max) max = v[1];
+                if(max_sys === 0 || v[2] < max_sys) max_sys = v[2];
+            });
+            description += odd;
+            actions.systemOdd.push(odd);
+        });
+
+        max = max_sys;
+
+        description = parseFloat(description).toFixed(2);
+
+        var sign = "+", odd = description;
+
+        if(oddType == "2") {
+            description = String( odds(description) );
+            sign = description.charAt(0);
+            if(sign == "-") odd = description * -1;
+        }
+
+        description = "@ " + description;
+
+        return {
+            "description" 	: description,
+            "max" 			: max,
+            "min" 			: min,
+            "sign"			: sign,
+            "odd"			: odd
+        };
+    }
+
+    function insertMixData() {
+        getSystem(); //System
+
+        var
+            p 		= $("#b-mix-input"),
+            mixData = actions.system > 1 ? getMixDataFromSystem() : getMixData();
+        //console.log(mixData);
+        actions.mixData["min"] = mixData.min;
+        actions.mixData["max"] = mixData.max;
+
+        $(".b-mix-bets__name", p).html( mixData.description );
+        $(".b-mix-bets__info .b-min i", p).html( mixData.min );
+        $(".b-mix-bets__info .b-max i", p).html( mixData.max );
+        $(".b-mix-bets__win", p).attr("data-odd", mixData.odd).attr("data-sign", mixData.sign);
+
+        if(oddType == "2" && mixData.sign == "-") {
+            $("#b-mix-input .b-mix-bets__win u").text(ticketTranslate.risk);
+        }
+        else {
+            $("#b-mix-input .b-mix-bets__win u").text(ticketTranslate.win);
+        }
+    }
+
+    function getSystem() {
+        var
+            tickets = amountInObject(),
+            live    = checkMixOnLive(),
+            sysCnt  = $(".b-mix-bets__system"),
+            oddCnt = $(".b-mix-bets__info > div").first(),
+            totalCnt = $(".b-mix-bets__info > .hide"),
+            active  = $(":checked", sysCnt).val() || 1;
+
+        if(tickets > 2 && live == false && teaser == 'false') {
+
+            if($(":radio:disabled", sysCnt).length) return;
+
+            var checked = active == 1 ? ' checked=""' : '';
+
+            var html =
+                '<div>' +
+                '<label class="left">' +
+                '<input type="radio" id="sys1" name="system" value="1"' + checked + '>' +
+                '<span>Standart mix</span>' +
+                '</label>' +
+                '</div>';
+
+            for(var i = 3; i <= tickets; i++) {
+                var countBets = getSystemCountBets(i - 1, tickets);
+                var checked = active == i - 1 ? ' checked=""' : '';
+                html +=
+                    '<div>' +
+                    '<label class="left">' +
+                    '<input type="radio" id="sys' + (i - 1) + '" name="system" value="' + (i - 1) + '"' + checked + '>' +
+                    '<span>System ' + (i - 1) + '/' + tickets + ' - ' + countBets + " מס' הימורים</span>" +
+                    '</label>' +
+                    '</div>';
+            }
+
+            sysCnt.html(html);
+            sysCnt.removeClass("hide");
+            totalCnt.toggleClass('hide');
+
+            if(actions.system > 1) {
+                oddCnt.hide();
+            }
+            else {
+                oddCnt.show();
+            }
+        }
+        else {
+            sysCnt.addClass("hide");
+            totalCnt.toggleClass('hide');
+            oddCnt.show();
+            actions.system = 1;
+        }
+    }
+
+    function getSystemCountBets(x, n) {
+        var tmp = [];
+        for(var i = 0; i < n; i++) {
+            tmp.push(i);
+        }
+        return combinations(tmp, x).length;
+    }
+
+    function checkMixOnOneEvent() {
+        var status = true, ids = [];
+        $.each(betObject, function(id, event){
+            if($.inArray(Number(event.event), ids) != -1) {
+                status = false;
+                return false;
+            }
+            else {
+                ids.push(Number(event.event));
+            }
+        });
+        return status;
+    }
+
+    function checkMixOnOneEventWithParam(id_e) {
+        var status = true, ids = [Number(id_e)];
+        $.each(betObject, function(id, event){
+            if($.inArray(Number(event.event), ids) != -1 || event.sport == 'chance') {
+                status = false;
+                return false;
+            }
+            else {
+                ids.push(Number(event.event));
+            }
+        });
+        return status;
+    }
+
+    function checkMixOnChance() {
+        var status = true;
+        $.each(betObject, function(id, event){
+            if(event.sport == "Chance" || event.sport == "chance") {
+                status = false;
+                return false;
+            }
+        });
+        return status;
+    }
+
+    function checkMixOnSport(type) {
+        var status = true;
+        $.each(betObject, function(id, event){
+            if(event.sport.toLowerCase() == type) {
+                status = false;
+                return false;
+            }
+        });
+        return status;
+    }
+
+    function checkMixOnSpecial() {
+        var status = true;
+        $.each(betObject, function(id, event){
+            if(event.timetype.length > 1) {
+                status = false;
+                return false;
+            }
+        });
+        return status;
+    }
+
+    function checkMixOnLive() {
+        var status = false;
+        $.each(betObject, function(id, event) {
+            if(event.timetype == 'l' || event.timetype == 'l-sp') {
+                status = true;
+                return true;
+            }
+        });
+        return status;
+    }
+
+    function isInt(value) {
+        return !isNaN(value) && (function(x) { return (x | 0) === x; })(parseFloat(value))
+    }
+
+    function placeBetSingle() {
+
+        $(".b-bets").each(function(){
+
+            var
+                id 			 = $(this).attr("data-id"),
+                winDIV 		 = $(".b-bets__win", this),
+                input 		 = $("input", winDIV),
+                min 		 = $(".b-min i", this),
+                max 		 = $(".b-max i", this),
+                minValue 	 = Number( betObject[id]['min'] ),
+                maxValue 	 = Number( betObject[id]['max'] ),
+                minValueMore = Number( min ),
+                maxValueMore = Number( max );
+
+            if(
+                betObject[id]['status'] == "waiting_comands" ||
+                betObject[id]['status'] == "sent" ||
+                betObject[id]['status'] == "waiting_accept" ||
+                betObject[id]['status'] == "line_suspend" ||
+                betObject[id]['status'] == "approved" ||
+                betObject[id]['status'] == "reject" ||
+                betObject[id]['status'] == "error"
+            )	return;
+
+            // Check for integer
+            if( ! isInt( input.val() ) ) {
+                blinkInput( input );
+                return;
+            }
+
+            if(input.val() < minValue || input.val() > maxValue) {
+
+                if(input.val() < minValue)
+                    min.addClass("animated bounceIn").text(minValue).parent().addClass("animated-parent");
+                else if(input.val() > maxValue)
+                    max.addClass("animated bounceIn").text(maxValue).parent().addClass("animated-parent");
+
+                setTimeout(function(){
+                    min.removeClass("animated bounceIn").parent().removeClass("animated-parent");
+                    max.removeClass("animated bounceIn").parent().removeClass("animated-parent");
+                }, 800);
+
+                return;
+            }
+
+            var stake 	= input.val();
+
+            if(winDIV.attr("data-sign") == "-") {
+                stake = Number( $("i", winDIV).text() );
+            }
+            betObject[id]['isMix']	= false;
+            betObject[id]['status'] 		= "waiting_comands";
+            betObject[id]['stake'] 			= stake;
+            betObject[id]['input_value']	= input.val();
+
+            lineCommands( betObject[id] );
+
+        });
+
+    }
+
+    function placeBetMix() {
+
+        var
+            winDIV 		= $("#b-mix-input .b-mix-bets__win"),
+            input 		= $("input", winDIV),
+            min 		= $("#b-mix-input .b-min i"),
+            max 		= $("#b-mix-input .b-max i"),
+            minValue 	= Number( actions.mixData.min ),
+            maxValue 	= Number( actions.mixData.max );
+
+        if(teaser == "true" && $('#betslipt-content .b-bets').length < maxTickets) {
+            popupMessage("You have to select " + maxTickets + " events");
+            return false;
+        }
+
+        // Check for integer
+        if( ! isInt( input.val() ) ) {
+            blinkInput( input );
+            return;
+        }
+
+        if(input.val() < minValue || input.val() > maxValue) {
+
+            if(input.val() < minValue)
+                min.addClass("animated bounceIn").text(minValue).parent().addClass("animated-parent");
+            else if(input.val() > maxValue)
+                max.addClass("animated bounceIn").text(maxValue).parent().addClass("animated-parent");
+
+            setTimeout(function(){
+                min.removeClass("animated bounceIn").parent().removeClass("animated-parent");
+                max.removeClass("animated bounceIn").parent().removeClass("animated-parent");
+            }, 800);
+
+            return;
+        }
+
+        var
+            stake = input.val(),
+            ticketStatus = true,
+            errorObject = {};
+
+        if(winDIV.attr("data-sign") == "-") {
+            stake = Number( $("i", winDIV).text() );
+        }
+
+        $(".b-bets").each(function(){
+
+            var id = $(this).attr("data-id");
+
+            if(
+                betObject[id]['status'] == "waiting_comands" ||
+                betObject[id]['status'] == "sent" ||
+                betObject[id]['status'] == "waiting_accept" ||
+                betObject[id]['status'] == "line_suspend" ||
+                betObject[id]['status'] == "approved" ||
+                betObject[id]['status'] == "reject" ||
+                betObject[id]['status'] == "error"
+            ) {
+                ticketStatus = false;
+                errorObject = betObject[id];
+                return false;
+            }
+
+            var mix_odd = 1;
+            $.each(betObject, function(k,v) {
+                mix_odd = mix_odd * v.odd;
+            });
+
+            betObject[id]['status'] 			= "waiting_comands";
+            betObject[id]['stake'] 				= "";
+            betObject[id]['input_value']		= input.val();
+            betObject[id]['stake_d'] 				= stake;
+            betObject[id]['mix_odd'] 				= mix_odd.toFixed(2);
+            betObject[id]['isMix']	= true;
+            betObject[id]['mix_data']			= {
+                'stake'	: stake,
+                'system': actions.system
+            };
+
+            lineCommands( betObject[id] );
+
+        });
+
+        if(ticketStatus == false && errorObject) {
+            clearMixData();
+            showMessage( errorObject );
+            return false;
+        }
+
+    }
+
+    function sentToWaitingAccept() {
+        $.each(betObject, function(k,v) {
+            if(v["status"] == "sent") {
+                v["status"] = "waiting_accept";
+            }
+        });
+    }
+
+    function checkData( response ) {
+        var i = 0;
+        $.each(response, function(k,v){
+
+            if(!betObject[v.id]) return;
+
+            if($(".b_betslip").is(":hidden")) openBetslip();
+
+            if(v.status == "waiting_for_send") {
+                if (betObject[v.id]['status'] == "opening") {
+                    var html = getHTML(v);
+                    $("#betslipt-content > .b_loader").first().remove();
+                    $("#betslipt-content").append(html);
+                    highlighting();
+                    betObject[v.id]['status'] = "waiting_for_send";
+                    checkButton();
+                }
+                else if (betObject[v.id]['status'] == "line_change" || betObject[v.id]['status'] == "line_suspend") {
+                    if (betObject[v.id]['status'] == "line_suspend") {
+                        clearTicket(v);
+                    }
+                    betObject[v.id]['status'] = "waiting_for_send";
+                }
+                else if (betObject[v.id]['status'] == "waiting_accept") {
+                    if (v.error_message) {
+                        showMessage(v);
+                    }
+                    betObject[v.id]['status'] = "waiting_for_send";
+                }
+                else if (betObject[v.id]['status'] == "waiting_for_send")
+                {
+                    changeDataAfterUpdate(v);
+                }
+            }
+            else if(v.status == "line_change") {
+                if(betObject[v.id]['status'] == "waiting_for_send") {
+                    lineChange( v );
+                    betObject[v.id]['status'] = "line_change";
+                }
+                else if(betObject[v.id]['status'] == "line_suspend") {
+                    lineChange( v );
+                    betObject[v.id]['status'] = "line_change";
+                }
+                else if(betObject[v.id]['status'] == "line_change") {
+                    lineChange( v );
+                }
+                else if(betObject[v.id]['status'] == "waiting_accept") {
+                    if(v.error_message) {
+                        showMessage( v );
+                    }
+                    betObject[v.id]['status'] = "line_change";
+                }
+            }
+            else if(v.status == "line_suspend") {
+                if(betObject[v.id]['status'] == "waiting_for_send") {
+                    lineSuspend( v );
+                    betObject[v.id]['status'] = "line_suspend";
+                }
+                else if(betObject[v.id]['status'] == "line_change") {
+                    lineChange( v );
+                    betObject[v.id]['status'] = "line_change";
+                }
+                else if(betObject[v.id]['status'] == "waiting_accept") {
+                    if(v.error_message) {
+                        showMessage( v );
+                    }
+                    betObject[v.id]['status'] = "line_suspend";
+                }
+            }
+            else if(v.status == "waiting_comands") {
+                if(betObject[v.id]['status'] == "waiting_comands") {
+                    if(v.error_message) {
+                        showMessage( v );
+                    }
+                    betObject[v.id]['status'] = "waiting_for_send";
+                }
+            }
+            else if(v.status == "sent") {
+                if(betObject[v.id]['status'] == "waiting_comands") {
+                    /*if( betObject[v.id]['timetype'] == "l" || betObject[v.id]['timetype'] == "l-sp" ) {
+                        lineSend( betObject[v.id] );
+                    }
+                    else {
+                        lineApproved( betObject[v.id] );
+                    }*/
+                    lineSend( betObject[v.id] );
+                    betObject[v.id]['status'] = "sent";
+                }
+            }
+            else if(v.status == "waiting_accept"){
+                if(betObject[v.id]['status'] == "sent" || betObject[v.id]['status'] == "waiting_accept") {
+                    betObject[v.id]['status'] = "waiting_accept";
+                    betObject[v.id]['betid']  = v.betid;
+                }
+                else if(betObject[v.id]['status'] == "opening_waiting_accept") {
+                    var html = getHTML( v );
+                    $(".b_loader").remove();
+                    $("#betslipt-content").append( html );
+                    lineSend( v );
+                    highlighting();
+                    betObject[v.id]['status'] = "waiting_accept";
+                }
+            }
+            else if(v.status == "approved"){
+                if(betObject[v.id]['status'] == "waiting_accept") {
+                    lineApproved( v );
+                    betObject[v.id]['status'] = "approved";
+                }
+                else if(betObject[v.id]['status'] == "sent") {
+                    if( betObject[v.id]['timetype'] != "l" && betObject[v.id]['timetype'] != "l-sp" ) {
+                        lineApproved( v );
+                    }
+                    betObject[v.id]['status'] = "approved";
+                    betObject[v.id]['betid']  = v.betid;
+                }
+            }
+            else if(v.status == "reject"){
+
+                if(betObject[v.id]['status'] == "waiting_accept" || betObject[v.id]['status'] == "waiting_comands") {
+                    if(v.error_message  && i < 1) {
+                        popupMessage( v.error_message);
+                        ++i;
+                    }
+
+                    lineReject( v );
+                    betObject[v.id]['status'] = "reject";
+                    betObject[v.id]['reload'] = "true";
+                }
+            }
+        });
+    }
+
+    function updateAlways(response)
+    {
+        $.each(response, function(k,v){
+            if(betObject[v.id] !== undefined)
+            {
+                betObject[v.id]['max_mix'] = v.max_mix;
+                betObject[v.id]['max_sys'] = v.max_sys;
+            }
+        });
+
+        if(actions.betType != 'single')
+        {
+            insertMixData();
+        }
+    }
+
+    function betslipAjax() {
+
+        clearTimeout(ajaxTimeout);
+
+        if(status === false) var data = {data: betObject, status : status, teaser : teaser};
+        else var data = {data : betObject};
+
+
+        if(teaser == 'false'){
+
+            setSessionTeaser(false);
+
+            if(actions.betType == "mix") {
+                setSessionMix(true);
+            } else{
+                setSessionMix(false);
+            }
+
+        } else{
+            setSessionTeaser(true);
+        }
+
+        // sentToWaitingAccept();
+
+        $.ajax({
+            type: "POST",
+            url: "ajax/ajax_betslip.php",
+            timeout: 2000,
+            data: data,
+            beforeSend : function(){
+                sentToWaitingAccept();
+            },
+            cache: false
+        })
+            .done(function(response){
+                if(response && response == "session_gone") {
+                    location.href = "/exit_new.php";
+                }
+
+                if(status == false && response && response.length != 0 && typeof response == "object") {
+                    actions.server = false;
+                    response = updateData( response );
+                    checkStatus();
+                }
+
+                if(response && response.length != 0 && !$.isEmptyObject(betObject) && typeof response == "object"){
+
+                    responseData = response;
+                    checkData( response );
+                    updateAlways( response );
+                }
+                status = true;
+                if (!$.isEmptyObject(betObject) ) {
+                    ajaxTimeout = setTimeout(betslipAjax, 1000);
+                }
+                //ajaxTimeout = setTimeout(betslipAjax, 1000);
+
+            })
+            .fail(function(jqXHR, textStatus){
+
+                ajaxTimeout = setTimeout(function(){
+                    status = true;
+                    betslipAjax();
+                }, 4000);
+            });
+
+    }
+
+    betslipAjax();
+
+    $("[data-bet]").live("click", function() {
+
+        if(!actions.server)
+        {
+            popupMessage( "Please wait! Your bets are loading" );
+            return false;
+        }
+
+        if(actions.betStatus == "sent" && actions.betType == "mix") {
+            popupMessage( "You can't change bet type because you placed bets" );
+            return false;
+        }
+
+        var id = $(this).attr("data-event") + $(this).attr("data-bet") + $(this).attr("data-opt");
+
+        if( ! betObject[id] ) {
+
+            if(amountInObject() < maxTickets && ($(this).attr("data-odd") != null && $(this).attr("data-odd") != 'null')) {
+
+                if(actions.betType == "mix") {
+
+                    if($(this).attr("data-sport") == "Chance" || $(this).attr("data-sport") == "chance") {
+                        popupMessage( "You can't make mix with chance events" );
+                        return false;
+                    }
+
+                    if($(this).attr("data-sport") == "Lotto" || $(this).attr("data-sport") == "lotto") {
+                        popupMessage( "You can't make mix with lotto events" );
+                        return false;
+                    }
+
+                    if($(this).attr("data-sport") == "Outright" || $(this).attr("data-sport") == "outright") {
+                        popupMessage( "You can't make mix with outright events" );
+                        return false;
+                    }
+
+                    if($(this).attr("data-mix") == "Off") {
+                        popupMessage( "You can't make mix because this liga is forbidden for mix" );
+                        return false;
+                    }
+
+                    var status = checkMixOnOneEventWithParam($(this).attr("data-event"));
+                    if(!status) {
+                        popupMessage( "You can't make mix with the same events" );
+                        return false;
+                    }
+
+                }
+
+                $(this).addClass("td-active");
+                openBetslip();
+
+                betObject[id] = {
+                    "status"	  : "opening",
+                    "id"		  : id,
+                    "bet" 		  : $(this).attr("data-bet"),
+                    "betmain" 	  : $(this).attr("data-bet-main"),
+                    "opt" 		  : $(this).attr("data-opt"),
+                    "opt_x" 	  : $(this).attr("data-opt_x"),
+                    "event" 	  : $(this).attr("data-event"),
+                    "odd" 		  : $(this).attr("data-odd"),
+                    "odd_x" 	  : $(this).attr("data-odd_x"),
+                    "timetype" 	  : $(this).attr("data-timetype"),
+                    "sport" 	  : $(this).attr("data-sport").toLowerCase(),
+                    "bettype"	  : teaser == "false" ? "usual" : "tizer",
+                    "liga_status" : $(this).attr("data-mix") ? $(this).attr("data-mix") : 'On',
+                    "tizopt" 	  : $(this).attr("data-tizopt")
+                };
+
+                betObj[id] = {};
+                betslipAjax();
+                $(window).trigger("scroll");
+
+            }
+
+        }
+
+        return false;
+
+    });
+
+    $(".b-bets .close-button").live("click", function(){
+
+        var id 	= $(this).attr("data-id");
+
+        if(betObject[id]) {
+            delete betObject[id];
+            delete betObj[id];
+            $("[id='" + id + "']").removeClass("td-active");
+
+            if(actions.betType == "mix" && actions.betStatus == "sent") {
+                $(".b-bets").remove();
+            }
+
+            else {
+                $(this).parents(".b-bets").remove();
+            }
+
+            if($(".b-bets .increace, .b-bets .reduce").length == 0) {
+                $(".button.place-accept").remove();
+
+                if($(".b-sent").length == 0) {
+                    $(".button.place-bet").removeClass("button-disabled");
+                }
+            }
+
+            actions.system = 1;
+            insertMixData();
+            $(".b-mix-bets__win input").trigger("keyup");
+
+            checkButton();
+        }
+
+        return false;
+
+    });
+
+    $(".b-game-gone .close-button").live("click", function(){
+        var p = $(this).parents(".b-game-gone");
+
+        removeOpeningBet();
+        p.remove();
+
+        checkButton();
+
+        return false;
+    });
+
+    $(".button.place-accept").live("click", function(){
+
+        $.each(betObject, function(k,v){
+            if(v.status == "line_change") {
+                betObject[v.id]['status'] = "waiting_for_send";
+            }
+        });
+
+        $(".b-description").removeClass("reduce increace animated bounceDescrGreen bounceDescrRed");
+
+        if(actions.betType == "mix") {
+            if($(".b-sent, .b-disabled, .b-game-gone, .b_loader").length == 0) {
+                $(".button.place-bet").removeClass("button-disabled");
+            }
+        }
+        else {
+            $(".button.place-bet").removeClass("button-disabled");
+        }
+
+        $(".button.place-accept").remove();
+
+        return false;
+
+    });
+
+    $(".b-bets .b-bets__win input, .b-mix-bets__win input").live("keydown", function(e){
+        var key = e.charCode || e.keyCode || 0;
+        if(key == 8 || key == 9 || key == 46 || (key >= 37 && key <= 40) || (key >= 48 && key <= 57) || (key >= 96 && key <= 105)) return true;
+        else return false;
+    }).live("keyup", function(){
+        var
+            p 		= $(this).parents("div[data-odd]"),
+            chbet 	= p.attr("data-odd"),
+            bet 	= $(this).val(),
+            sign 	= p.attr("data-sign");
+
+        if(actions.system > 1) {
+            var tickts = amountInObject();
+            var systemCountBets = getSystemCountBets(Number(actions.system), Number(tickts));
+            $(".b-mix-bets__info > div:last-child .b-total-cost i").text(bet * systemCountBets);
+
+            var win = 0;
+
+            $.each(actions.systemOdd, function(i,odd){
+                win += (bet * odd) - bet;
+            });
+
+            win = win.toFixed(0);
+        }
+
+        else {
+            if(sign == "-") {
+                var w = bet / 100;
+                var win = chbet * w;
+                win = win.toFixed(0);
+            }
+            else {
+                var w = chbet * bet;
+                var win = w - bet;
+                win = win.toFixed(0);
+            }
+        }
+
+        $("i", p).html(win);
+    });
+
+    $(".button.place-bet").live("click", function(){
+        if($(this).hasClass("button-disabled")) return false;
+
+        if(actions.betType == "mix") placeBetMix();
+        else placeBetSingle();
+
+        return false;
+    });
+
+    $(".b_betslip .betslip-buttons span").live("click", function(){
+
+        if($(this).hasClass("active")) return false;
+
+        if(actions.betStatus == "sent") {
+            popupMessage( "You can't change bet type because you placed bets" );
+            return false;
+        }
+
+        changeBetType();
+
+    });
+
+    $(".b-mix-bets__system :radio").live("change", function(){
+        actions.system = $(this).val();
+        insertMixData();
+        $(".b-mix-bets__win input").trigger("keyup");
+    });
+
+    $("#close-betslip").live("click", function() {
+        $("#betslipt-content .close-button").trigger("click");
+        return false;
+    });
+
+    function setSessionMix(message) {
+        $.post("ajax/ajax_session.php", { mix : message });
+    }
+
+
+    function setSessionTeaser(message) {
+        $.post("ajax/ajax_session_tizer.php", { teaser : message });
+    }
+
+    function highlighting() {
+        $.each(betObj, function(k,v){
+            $("td[id='" + k + "']").addClass("td-active");
+        });
+    }
+
+    
+});
+
+</script>
+
+
+
+<script>
+
+$(".menu-item a ").click(function() {
+
+    $(this).next("ul").slideToggle();
+});
+</script>	
+  
+      </div>
+</section>

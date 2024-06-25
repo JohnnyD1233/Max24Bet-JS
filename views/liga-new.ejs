@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Leagues by Country</title>
+  <link rel="stylesheet" href="/styles/liga-new.css" />
+  <script>
+    function toggleLeagues(countryId) {
+        const list = document.getElementById(`league-list-${countryId}`);
+        if (list.style.display === "none") {
+            list.style.display = "block";
+        } else {
+            list.style.display = "none";
+        }
+    }
+</script>
+</head>
+<body>
+    <div class="containers">
+        <h1 class="h1">Leagues by Country</h1>
+        <div class="league-container">
+            <% Object.keys(groupedLeagues).forEach(country => { %>
+                <div class="country">
+                    <h2>
+                        <a href="javascript:void(0);" class="country-name" onclick="toggleLeagues('<%= country %>')">
+                            <%= country %>
+                        </a>
+                    </h2>
+                    <ul id="league-list-<%= country %>" class="league-list" style="display: none;">
+                        <% groupedLeagues[country].forEach(league => { %>
+                            <li class="league">
+                                <h3><%= league.name %></h3>
+                                <p>League ID: <%= league.league_id %></p>
+                                <!-- Add more league details as needed -->
+                            </li>
+                        <% }); %>
+                    </ul>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</body>
+</html>

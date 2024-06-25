@@ -1,0 +1,45 @@
+/* Default styles */
+.main_block {
+    width: 100%; /* Adjust width as needed */
+    margin: 0 auto; /* Center align */
+}
+
+.option-pic-holder {
+    /* Your styles for option-pic-holder */
+    /* Example styles */
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.option-game-info {
+    /* Your styles for option-game-info */
+    /* Example styles */
+    padding: 10px;
+}
+
+.optionsholder {
+    /* Your styles for optionsholder */
+    /* Example styles */
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* Media query for screens 950px and below */
+@media only screen and (max-width: 950px) {
+    .main_block {
+        width: 100%; /* Adjust width as needed */
+        padding: 10px; /* Example padding for spacing */
+    }
+
+    .option-pic-holder {
+        width: 100%; /* Full width for smaller screens */
+        /* Additional styles for smaller screens */
+    }
+
+    .optionsholder {
+        width: 100%; /* Full width for smaller screens */
+        /* Additional styles for smaller screens */
+    }
+
+    /* Adjust other styles as needed */
+}

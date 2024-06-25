@@ -1,0 +1,37 @@
+
+
+
+
+
+
+<link id="responsive-css" rel="stylesheet" href="/styles/style_rtl_new.css">
+<link id="non-responsive-css" rel="stylesheet" href="/styles/style_rtl.css" disabled>
+<link id="betslip-css"rel="stylesheet" href="/styles/betslip.css" disabled>
+
+
+
+
+<li><button id="toggle-css">לאתר המחשב</button></li>
+
+<a href="#" id="toggle-css">לאתר המחשב</a>
+
+
+
+<script>
+            const responsiveCSS = document.getElementById('responsive-css');
+        const nonResponsiveCSS = document.getElementById('non-responsive-css');
+        const betslipCSS = document.getElementById('betslip-css');
+        const toggleLink = document.getElementById('toggle-css');
+
+        document.getElementById('toggle-css').addEventListener('click', function() {
+            if (responsiveCSS.disabled) {
+                responsiveCSS.disabled = false;
+                nonResponsiveCSS.disabled = true;
+                betslipCSS.disabled = true;
+            } else {
+                responsiveCSS.disabled = true;
+                nonResponsiveCSS.disabled = false;
+                betslipCSS.disabled = false;
+            }
+        });
+</script>

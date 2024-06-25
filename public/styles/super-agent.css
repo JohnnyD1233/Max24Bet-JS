@@ -1,0 +1,62 @@
+/* Custom CSS for responsive layout */
+
+/* Ensure the table is responsive and scrolls horizontally on smaller screens */
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Adjust column widths for smaller screens */
+@media (max-width: 768px) {
+    .col-md-12 {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
+/* Center align the icons vertically */
+.glyphicon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Adjust spacing */
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Ensure form controls are responsive */
+.form-inline {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-control {
+    width: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Ensure table headers wrap properly */
+.table thead th,
+.table tfoot th {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* Ensure table cells wrap properly */
+.table td,
+.table th {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* Adjust responsive behavior for table cells */
+@media (max-width: 576px) {
+    .table td,
+    .table th {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,136 @@
+
+
+/*
+ * The tab system
+ */
+
+.tabs {
+	width: 100%;
+	margin: 0 auto;
+  	overflow: hidden;
+  	
+	min-height: 300px;
+  	
+	position: relative;
+	/* border: rgba(0,83,159,.1) 1px solid; */
+	margin-bottom: 20px;
+	/*margin-top: 80px;*/
+	background: #242323;
+	color: #fff;
+	/*margin-top: 9px;*/
+	
+}
+
+.tabs img {
+	display: block;
+	margin: .5em 0;
+	max-height: 170px;
+}
+
+.tabs input[type="radio"][name="tab"] {
+	display: none;
+}
+
+.tabs label[for*="tab"] {
+  	display: block;
+  	float: left;
+  	font-size: 1.2em;
+	
+  	height: 37px;
+	line-height: 40px;
+  	padding: .3em 0;
+  	cursor: pointer;
+  	width: 25%;
+  	text-align: center;
+  	transition: background ease-in-out .3s;
+  	position: relative;
+  	
+}
+
+label[for*="tab"]::after {
+	content: "";
+	width: 0;
+  	height: 0;
+  	
+	/* border-top: 10px solid #00539f; */
+  	border-bottom: 10px solid transparent;
+  	border-left: 10px solid transparent;
+  	border-right: 10px solid transparent;
+  	position: absolute;
+	bottom: -20px;
+  	left: 50%;
+	margin-left:  -10px;
+  	opacity: 0;
+  	transition: opacity ease-in-out .3s;
+}
+
+.tabs input[type="radio"][name="tab"]:checked + label {
+	background-color: #F4E33B;
+	color: #000;
+	z-index: 9999;
+}
+
+.tabs input[type="radio"][name="tab"]:checked + label::after {
+  	opacity: 1;
+}
+
+.tabs .tab-content {
+/* box-shadow: #00539f 0 1px 0; */
+opacity: 0;
+top: 46px;
+/* padding: 1em; */
+position: absolute;
+/* font-size: 1.1em; */
+width: 100%;
+height: 100%;
+transition: opacity ease-in-out .3s;
+border-top: 1px solid #F4E33B;
+height: 800px;
+overflow: overlay;
+}
+
+.tabs .content-scroll {
+	/* height: 100%; */
+	/* overflow-y: scroll; */
+}
+
+.tabs input[type="radio"][name="tab"]:checked + label + .tab-content {
+	opacity: 1;
+	z-index: 999;
+}
+
+
+
+
+/*
+ *	Internet explorer
+ */
+
+.ie {
+	display: none;
+}
+
+
+
+.rightborder{
+	
+	border-right: 1px solid #000;
+	
+}
+
+
+
+.tabs label:hover {
+  	display: block;
+  	float: left;
+  	font-size: 1.2em;
+	
+	line-height: 40px;
+  	padding: .3em 0;
+  	cursor: pointer;
+  	width: 25%;
+  	text-align: center;
+  	transition: background ease-in-out .3s;
+  	position: relative;
+	background: #3b3b3b
+}

@@ -1,0 +1,599 @@
+
+<!-- <link rel="stylesheet" href="/styles/style_rtl.css" /> -->
+<!-- <link rel="stylesheet" href="/styles/chance.css" /> -->
+
+
+
+<header>
+<%-include("header.ejs"); %>
+</header>
+ 
+
+   <section class="top-section">
+      <div class="main_block">
+        <div class="betlist_holder">   
+           <div id="wrapper">
+    <div class="t-shadow"></div>
+    <div class="carts-bg"></div>
+    <div class="b-shadow"></div>
+    
+    <div class="content">
+      
+      <div class="selects">
+      <div class="cart first">
+       <select id="card1s" class="span1 cardspecial" style="display: inline-block;">  
+       
+          <option value="7">7</option>
+
+            <option value="8">8</option>
+          
+            <option value="9">9</option>
+          
+            <option value="10">10</option>
+          
+            <option value="11">J</option>
+          
+            <option value="12">Q</option>
+          
+            <option value="13">K</option>
+          
+            <option value="14">A</option>
+      </select>
+      <div class="carta"><img id="card1" src="img/carta1.png"/><span class="appr"></span></div>
+      </div>
+      <div class="cart second">
+      <select id="card2s" class="span1 cardspecial" style="display: inline-block;">  
+       
+          <option value="7">7</option>
+
+            <option value="8">8</option>
+          
+            <option value="9">9</option>
+          
+            <option value="10">10</option>
+          
+            <option value="11">J</option>
+          
+            <option value="12">Q</option>
+          
+            <option value="13">K</option>
+          
+            <option value="14">A</option>
+      </select>
+      <div class="carta"><img id="card2" src="img/carta2.png"/><span class="appr"></span></div>
+      </div>
+      
+      <div class="cart">
+      <select id="card3s" class="span1 cardspecial" style="display: inline-block;">  
+      
+          <option value="7">7</option>
+
+            <option value="8">8</option>
+          
+            <option value="9">9</option>
+          
+            <option value="10">10</option>
+          
+            <option value="11">J</option>
+          
+            <option value="12">Q</option>
+          
+            <option value="13">K</option>
+          
+            <option value="14">A</option>
+      </select>
+      <div class="carta"><img id="card3" src="img/carta3.png"/><span class="appr"></span></div>
+      </div>
+      
+      <div class="cart last">
+      <select id="card4s" class="span1 cardspecial"style="display: inline-block;" >  
+        
+          <option value="7">7</option>
+
+            <option value="8">8</option>
+          
+            <option value="9">9</option>
+          
+            <option value="10">10</option>
+          
+            <option value="11">J</option>
+          
+            <option value="12">Q</option>
+          
+            <option value="13">K</option>
+          
+            <option value="14">A</option>
+      </select>
+      <div class="carta"><img id="card4" src="img/carta4.png"/><span class="appr"></span></div>
+      </div>
+      <div class="carts-shadows"></div>
+      </div>
+      
+      <div class="buttonslc">
+        <a id="over"  class="buttonlc large regular custom" href="javascript:void(0);"  >Over</a>
+        <a id="under"  class="buttonlc large regular custom" href="javascript:void(0);"  >Under</a>
+        <a id="odd"  class="buttonlc large regular custom" href="javascript:void(0);"  >Odd</a>
+        <a id="even"  class="buttonlc large regular custom" href="javascript:void(0);"  >Even</a>
+        <a id="special"  class="buttonlc large regular custom" href="javascript:void(0);" >Special</a>
+      </div>
+      
+      <div class="sub">
+      <div  id="slev">
+      <select id="events"> 
+
+      </select>
+            <button id="makebet" >Make Bet</button>
+            <button class="ticket-button" style="display: none;"></button>
+
+      </div>
+      </div>
+    </div>
+    
+  </div>
+		   
+          
+      
+           
+          
+         </div>
+      </div>
+      <div class="side_block">
+
+        <%-include("side-menu.ejs");%>
+
+      </div>
+   </section>
+
+
+      
+
+   
+   <script type="text/javascript">
+  
+    function click_line(parm) {
+      $('label').removeClass( "odd_label_selected" );
+      $( parm ).addClass( "odd_label_selected" );
+      $('.menu_hide').hide();
+    
+       setTimeout(function (){
+    
+                 $( "#bet" ).focus();
+                 $( "#win" ).focus();
+    
+             }, 500);
+      
+    
+    
+    }
+    
+    function show_menu()
+    
+    {
+    
+      $('.menu_hide').show();
+    
+    
+    }
+    
+    
+    
+    $( "#bcancel" ).click(function() {
+      show_menu();
+    });
+    
+    var lang = "<?php echo $_SESSION['user']['language']; ?>";
+    
+    
+    
+    
+    $( "#title_menu" ).click(function() {
+      if ($('.menu_hide').is(":visible")) { $('.menu_hide').hide();  }
+       else { show_menu();}
+    });
+    
+    
+    //  formiravoaniya linka dlya chanse 
+    
+    
+    var card1 = "0";
+    var card2 = "0";  
+    var card3 = "0";  
+    var card4 = "0";  
+    
+    $( "#card1" ).toggle(function() {
+        
+    
+      $(this).attr({src:"img/carta1b.png"});
+      card1 = "1";
+    
+    }, function() {
+      $(this).attr({src:"img/carta1.png"});
+      card1 = "0";
+      
+    });
+    
+    $( "#card2" ).toggle(function() {
+      $(this).attr({src:"img/carta2b.png"});
+      card2 = "1";
+    }, function() {
+      $(this).attr({src:"img/carta2.png"});
+      card2 = "0";
+      
+    });
+    
+    $( "#card3" ).toggle(function() {
+      $(this).attr({src:"img/carta3b.png"});
+      card3 = "1";
+      
+    }, function() {
+      $(this).attr({src:"img/carta3.png"});
+      card3 = "0";
+      
+    });
+    
+    $( "#card4" ).toggle(function() {
+      $(this).attr({src:"img/carta4b.png"});
+      card4 = "1";
+      
+    }, function() {
+      $(this).attr({src:"img/carta4.png"});
+      card4 = "0";
+      
+    });
+    
+    var kbet = "over";
+    
+    $( "#over" ).click(function() {
+      kbet = "over";
+    });
+    
+    $( "#under" ).click(function() {
+      kbet = "under";
+    });
+    
+    $( "#odd" ).click(function() {
+       kbet = "odd";
+    });
+    
+    $( "#even" ).click(function() {
+      kbet = "even";
+    });
+    
+    $( "#special" ).click(function() {
+      kbet = "special";
+    });
+    
+    
+    
+    var bet;
+    //var opt = '';
+    var cbet;
+    var counter = 0;
+    var control;
+    function buildlink()
+    { 
+    cbet = "";
+    if (card1 == "1")  {cbet += "-1";counter++;}
+    if (card2 == "1")  {cbet += "-2";counter++;}
+    if (card3 == "1")  {cbet += "-3";counter++;}
+    if (card4 == "1")  {cbet += "-4";counter++;}
+    if (card1 == "0" && card2 == "0" && card3 == "0" && card4 == "0")  {
+    
+        $("#card1, #card2 , #card3, #card4").effect("pulsate");
+        
+      
+      }
+    
+       else {
+        control = "ok";
+        hide_menu();
+        }
+    
+    
+    
+    
+    
+    bet = kbet + cbet;
+    
+    //opt = kbet == "over" || kbet == "under" ? counter * 10.5 : '';
+      
+    if (kbet == "special") {
+      bet = '';
+      
+      if (card1 == "1")  {bet = bet + "-1";}
+      if (card2 == "1")  {bet = bet + "-2";}
+      if (card3 == "1")  {bet = bet + "-3";}
+      if (card4 == "1")  {bet = bet + "-4";}
+      
+      if (card1 == "1")  {bet = bet + ":1-" + $( "#card1s" ).val();}
+      if (card2 == "1")  {bet = bet + ":2-" + $( "#card2s" ).val();}
+      if (card3 == "1")  {bet = bet + ":3-" + $( "#card3s" ).val();}
+      if (card4 == "1")  {bet = bet + ":4-" + $( "#card4s" ).val();}
+      
+      bet = 'special-' + bet.substring(1);
+    
+     }
+    var events = $( "#events" ).val();
+    
+    if (events == null)  {alert('Select correct Date'); control = 0; return;}
+    //$( "#makebet" ).attr( "onclick", "alert('hi')");
+    //$( "#makebet" ).attr( "onclick", src + events + "&bet=" + bet);
+    
+    
+    }
+    
+    
+    
+    $( "#makebet" ).click(function() {
+     buildlink();
+     var uid = <?php Print($uid); ?>;
+     if (control==="ok")  {
+    
+    var vis_select_market = kbet + " @ ";
+    
+    var cards_value = ((cbet.match(/-/g) || []).length);
+    
+    
+    if (kbet != "special")  {
+      
+    
+    
+      // esli ne spechial
+    var odd_dec = '1.91';
+    <?php 
+    if($uid == '13967' || $uid == '14649' || $uid == '14835' || $uid == '16002')
+    {
+      if ($_SESSION['user']['trc'] == '2')  {echo "var line = \"-105\";";}
+      else {echo "var line = \"1.95\";";echo "odd_dec = \"1.95\";";}
+    }
+    else
+    {
+      if ($_SESSION['user']['trc'] == '2')  {echo "var line = \"-110\";";}
+      else {echo "var line = \"1.91\";";}
+    }
+    ?>
+    
+      
+    
+       var vis_market = "";
+       if (card1 == "1")  {vis_market += "<br><?php echo trans('card 1', $dic); ?>";}
+       if (card2 == "1")  {vis_market += "<br><?php echo trans('card 2', $dic); ?>";}
+       if (card3 == "1")  {vis_market += "<br><?php echo trans('card 3', $dic); ?>";}
+       if (card4 == "1")  {vis_market += "<br><?php echo trans('card 4', $dic); ?>";}
+        
+        vis_market = vis_market.slice( 4 );
+    
+    
+       switch(cards_value) {
+        case 1:
+             var opt = "10.5";
+            break;
+        case 2:
+             var opt = "21";
+            break;
+        case 3:
+             var opt = "31.5";
+            break;
+        case 4:
+             var opt = "42";
+            break;
+       
+    }
+      
+    
+    
+    }
+    else 
+    {
+    
+        var specialLength = [card1,card2,card3,card4].filter(n => n == '1');
+    
+        if(specialLength.length > 1)
+        {
+            alert('<?php echo trans("You cannot place a special bet with more than one card.", $dic); ?>');
+    
+            return false;
+        }
+    
+      // spechail
+    
+       var vis_market = "";
+       if (card1 == "1")  {vis_market += ("<br><?php echo trans('card 1', $dic); ?> - " + $( "#card1s" ).val());   }
+       if (card2 == "1")  {vis_market += ("<br><?php echo trans('card 1', $dic); ?> - " + $( "#card2s" ).val());   }
+       if (card3 == "1")  {vis_market += ("<br><?php echo trans('card 1', $dic); ?> - " + $( "#card3s" ).val());   }
+       if (card4 == "1")  {vis_market += ("<br><?php echo trans('card 1', $dic); ?> - " + $( "#card4s" ).val());   }
+    
+      
+       var opt = "";
+       switch(cards_value) {
+        case 1:
+          var odd_dec = '7';
+    
+            <?php 
+            if ($_SESSION['user']['trc'] == '2')  {echo "var line = \"+600\";";}
+            else {echo "var line = \"7\";";}
+            ?>
+            break;
+        case 2:
+    
+         var odd_dec = '31';
+    
+            <?php 
+            if ($_SESSION['user']['trc'] == '2')  {echo "var line = \"+3000\";";}
+            else {echo "var line = \"31\";";}
+            ?> 
+            break;
+              case 3:
+               var odd_dec = '301';
+            <?php 
+            if ($_SESSION['user']['trc'] == '2')  {echo "var line = \"+30000\";";}
+            else {echo "var line = \"301\";";}
+            ?> 
+            break;
+              case 4:
+              var odd_dec = '2001';
+            <?php 
+            if ($_SESSION['user']['trc'] == '2')  {echo "var line = \"+200000\";";}
+            else {echo "var line = \"2001\";";}
+            ?> 
+            break;
+       
+    }
+     
+    
+    }
+    
+    
+    
+    vis_select_market = vis_select_market + opt + "<br>";
+    
+    
+    var events = $( "#events" ).val();
+    var liga = "chance";
+    var sport = "Chance";
+    
+    var vis_liga = "";
+    var vis_sport = "Chance";
+    
+    
+     //showBet('1', events,'999', vis_sport, vis_liga, '', '', line, vis_market, vis_select_market, odd_dec, '' , '100', '25000', '', '', '', bet, bet, odd_dec);
+    
+    // ===========
+    
+    
+                    try{
+                            /*
+          var sport   = $(vis_sport).data('sport');
+                            var market  = $('t').data('timetype');
+                            var bettype = $(bet).data('bet');
+                            var id_e    = $(events).data('event');
+                            var odd_opt = $(bet).data('opt');
+                            var odd     = $(odd_dec).data('odd');
+          */
+    
+                var timetype = 't';
+                
+                            var event = {
+                  'sport' : sport, 
+                  'timetype' : timetype, 
+                  'bet' : bet, 
+                  'event' : events, 
+                  'opt' : opt,
+                  'opt_x': 1,
+                  'odd' : odd_dec,
+                  'odd_x' : odd_dec,
+                  'betmain' : ''
+                };	
+              
+                $(".ticket-button")
+                  .attr("id", event.event + event.bet + event.opt)
+                  .attr("data-bet", event.bet)
+                  .attr("data-betmain", event.betmain)
+                  .attr("data-opt", event.opt)
+                  .attr("data-opt_x", event.opt_x)
+                  .attr("data-event", event.event)
+                  .attr("data-odd", event.odd)
+                  .attr("data-odd_x", event.odd_x)
+                  .attr("data-timetype", event.timetype)
+                  .attr("data-sport", event.sport);
+              
+                $(".ticket-button").trigger("click");
+    
+    //                        if( betslip.addGame( event ) )
+    //                        {
+    //                                last_event_added = event.el_id;
+    //                                //setBetslipBusy();
+    //                                $('#bet-slip-container').show();
+    //                        }
+    
+    
+    
+                    }catch(e){
+                            alert('Error add event : ' + e.message );
+                    }
+    
+    
+    
+     /// =========	 
+    
+     }
+     
+     bet="";
+     
+    
+    
+    /* peredvigaem k tiketu  */
+    //var lang = "<?php echo $_SESSION['user']['language']; ?>";
+    //if (lang == 3)  {$( "body" ).scrollTop( 160); $( "body" ).scrollLeft( 10000 );}
+    //  else {$( "body" ).scrollTop( 160); $( "body" ).scrollRight( 10000 );}
+     
+    
+     });
+     
+     
+     
+    
+     
+     
+    
+    $( "#special, #card1, #card2, #card3, #card4" ).click(function() {
+      
+     if (card1 == "1" && kbet == "special")  {$("#card1s").fadeIn();}
+     if (card2 == "1" && kbet == "special")  {$("#card2s").fadeIn();}
+     if (card3 == "1" && kbet == "special")  {$("#card3s").fadeIn();}
+     if (card4 == "1" && kbet == "special")  {$("#card4s").fadeIn();}
+    
+    //close_betslip();
+     });
+    
+    $( "#over, #under, #odd, #even, #card1, #card2, #card3, #card4").click(function() {
+     
+       
+       if (card1 != "1")  {$("#card1s").fadeOut();}
+       if (card2 != "1")  {$("#card2s").fadeOut();}
+       if (card3 != "1")  {$("#card3s").fadeOut();}
+       if (card4 != "1")  {$("#card4s").fadeOut();}
+    
+      //close_betslip();
+     });
+    
+    $( "#over, #under, #odd, #even").click(function() {
+     
+       
+       $(".cardspecial").fadeOut();
+      
+      
+     });
+    
+    
+    
+    function hide_menu(parm)
+    
+    { 
+    
+      $('.menu_hide').hide();
+     
+      
+    
+    }
+    
+    function show_menu()
+    
+    {
+    
+      $('.menu_hide').show();
+    
+    
+    }
+    
+    
+    
+    // setInterval(function(){ link = "ajax/chance.php<?php if (isset($_GET['date'])) {echo '?date='.$_GET['date']; } ?>";
+     
+    //  var cont = $('#events');   
+    //  $.get(link, function(data){
+    //  cont.html(data);
+    //  }); }, 3000);
+    
+    </script>
+  

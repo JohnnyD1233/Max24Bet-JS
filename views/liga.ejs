@@ -1,0 +1,1693 @@
+<!-- <link rel="stylesheet" href="/styles/liga.css" /> -->
+    <div class="main_block">
+
+
+      <form id="form_liga_soocer" method="get" action="disp_sport_milti_sel_liga.php">
+      <div class="regular-league-holde" style="display: block;">
+               
+            <div class="regular-league-bar"> 
+            <div class="list-leagues-ttl">כדורגל</div>
+      
+            <div id="submit_soccer" class="show-selected-leagues-ttl">הצג ליגות שנבחרו</div>
+            <a href="/disp_sport.php?sport=soccer&amp;time=t"><div id="submit_soccer" class="show-selected-leagues-ttl"> משחקי היום</div></a>
+            </div>  
+              
+            <div class="futer-lieagues-list-holder">
+         
+             <div class="listContainer1"><ul class="my-list listCol1">
+               
+               <input name="sport" value="soccer" type="hidden">
+                <input name="time" value="te" type="hidden">
+   
+                <li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Uzbekistan.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="UZBEKISTAN+SUPER+LEAGUE" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="/odds"> אוזבקיסטן סופר ליג</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Austria.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="AUSTRIA+VFV+CUP" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=AUSTRIA+VFV+CUP"> אוסטריה -  גביע VFV</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Australia.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="AUSTRALIA+NORTHERN+NEW+SOUTH+WALES+PREMIER+LEAGUE" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=AUSTRALIA+NORTHERN+NEW+SOUTH+WALES+PREMIER+LEAGUE"> אוסטרליה - דרום ווילס פרמיירליג</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Australia.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="AUSTRALIA+CAPITAL+NATIONAL+PREMIER+LEAGUE" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=AUSTRALIA+CAPITAL+NATIONAL+PREMIER+LEAGUE"> אוסטרליה - קפיטל נשיונל פרמייר ליג</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Australia.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="AUSTRALIA+VICTORIA+NATIONAL+PREMIER+LEAGUE" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=AUSTRALIA+VICTORIA+NATIONAL+PREMIER+LEAGUE"> אוסטרליה ויקטוריה - פרמיירליג</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Australia.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="AUSTRALIA+NEW+SOUTH+WALES+PREMIER+LEAGUE" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=AUSTRALIA+NEW+SOUTH+WALES+PREMIER+LEAGUE"> אוסטרליה ניו סאות" וויילס</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Australia.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="AUSTRALIA+FOOTBALL+QUEENSLAND+PREMIER+LEAGUE+1" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=AUSTRALIA+FOOTBALL+QUEENSLAND+PREMIER+LEAGUE+1"> אוסטרליה קווינמסלנד פרמייר ליג	</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Australia.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="AUSTRALIA+QUEENSLAND+NATIONAL+PREMIER+LEAGUE" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=AUSTRALIA+QUEENSLAND+NATIONAL+PREMIER+LEAGUE"> אוסטרליה קווינסלנד נשיונל</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/all_leagues.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2AUEFA+SUPER+CUP+-+WINNER" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2AUEFA+SUPER+CUP+-+WINNER"> אופ"א - סופר קאפ - זוכה</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/all_leagues.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2AUEFA+SUPER+CUP" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2AUEFA+SUPER+CUP"> אופ"א סופר קאפ	</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Uruguay.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="URUGUAY+TORNEO+INTERMEDIO" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=URUGUAY+TORNEO+INTERMEDIO"> אורוגוואי טורנאו אינטרמדיו</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Uruguay.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="URUGUAY+SEGUNDA+DIVISION" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=URUGUAY+SEGUNDA+DIVISION"> אורוגוואי ליגה שנייה</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/all_leagues.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="FAROE+ISLANDS+PREMIER+LEAGUE" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=FAROE+ISLANDS+PREMIER+LEAGUE"> איי פארו פרמייר ליג</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Iceland.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="ICELAND+PREMIER+LEAGUE" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=ICELAND+PREMIER+LEAGUE"> איסלנד - ליגה ראשונה</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Iceland.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="ICELAND+2ND+DIVISION" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=ICELAND+2ND+DIVISION"> איסלנד - ליגה שלישית</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Estonia.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="ESTONIA+MEISTRILIIGA" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=ESTONIA+MEISTRILIIGA"> אסטוניה מייסטרליגה</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Argentina-Liga-Proffessional.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="ARGENTINA+LIGA+PROFESIONAL" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=ARGENTINA+LIGA+PROFESIONAL"> ארגנטינה  - ליגה ראשונה</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Argentina-Liga-Proffessional.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="ARGENTINA+LIGA+PROFESIONAL+-+CORNERS" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=ARGENTINA+LIGA+PROFESIONAL+-+CORNERS"> ארגנטינה  - ליגה ראשונה  - קרנות</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Argentina.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="ARGENTINA+PRIMERA+B+METROPOLITANA" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=ARGENTINA+PRIMERA+B+METROPOLITANA"> ארגנטינה B מטרופוליטאנה</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/United-States.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="USA+MAJOR+LEAGUE+SOCCER" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=USA+MAJOR+LEAGUE+SOCCER"> ארה"ב מ.ל.ס</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/United-States.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="UNITED+SOCCER+LEAGUE+CHAMPIONSHIP" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=UNITED+SOCCER+LEAGUE+CHAMPIONSHIP"> ארצות הברית - ליגת USL</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Belarus.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="BELARUS+PREMIER+LEAGUE" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=BELARUS+PREMIER+LEAGUE"> בלארוס ליגת העל </a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Brazil-Serie-A.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="BRAZIL+SERIE+A+-+CORNERS" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=BRAZIL+SERIE+A+-+CORNERS"> ברזיל  ליגה ראשונה  - קרנות</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Brazil-Serie-A.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="BRAZIL+SERIE+A" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=BRAZIL+SERIE+A"> ברזיל  ליגה ראשונה</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Brazil.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="BRAZIL+SERIE+B" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=BRAZIL+SERIE+B"> ברזיל - ליגה שנייה</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Brazil.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="BRAZIL+SERIE+C" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=BRAZIL+SERIE+C"> ברזיל ליגה שלישית</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/all_leagues.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="MAURICE+REVELLO+TOURNAMENT+%28IN+FRANCE%29" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=MAURICE+REVELLO+TOURNAMENT+%28IN+FRANCE%29"> טורניר ידידות  (בצרפת)</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/all_leagues.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="INTERNATIONAL+FRIENDLY" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=INTERNATIONAL+FRIENDLY"> ידידות בינלאומי</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/UEFA Euro Cup Germany 2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+SPECIFIC+10+MINS" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+SPECIFIC+10+MINS"> יורו 2024	 - 10  דקות</a>
+                          </li></ul><ul class="listCol2 my-list"><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/UEFA-Euro-Cup-Germany-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+SPECIFIC+15+MINS" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+SPECIFIC+15+MINS"> יורו 2024	 - 15 דק'</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/UEFA-Euro-Cup-Germany-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+SPECIFIC+15+MINS+NUMBER+OF+CORNERS" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+SPECIFIC+15+MINS+NUMBER+OF+CORNERS"> יורו 2024	- 10 דקות - קרנות</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/UEFA-Euro-Cup-Germany-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+SPECIFIC+15+MINS+TOTAL+BOOKINGS" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+SPECIFIC+15+MINS+TOTAL+BOOKINGS"> יורו 2024	- 15 דקות - כרטיסים</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/UEFA-Euro-Cup-Germany-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+OWN+GOAL" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+OWN+GOAL"> יורו 2024	- גולים עצמיים</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/UEFA-Euro-Cup-Germany-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+SUBSTITUTION" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+SUBSTITUTION"> יורו 2024	- חילופים</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/UEFA-Euro-Cup-Germany-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+BOOKING" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+BOOKING"> יורו 2024	- כרטיסים</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/UEFA-Euro-Cup-Germany-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+1st+HALF+vs+2nd+HALF" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+1st+HALF+vs+2nd+HALF"> יורו 2024	- מחצית ראשונה/מחצית שניה</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/UEFA-Euro-Cup-Germany-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+HOME+TEAM%2FAWAY+TEAM" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+HOME+TEAM%2FAWAY+TEAM"> יורו 2024	- קבוצות בית/קבוצות חוץ</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/UEFA-Euro-Cup-Germany-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2AUEFA+EURO+2024+%28IN+GERMANY%29" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2AUEFA+EURO+2024+%28IN+GERMANY%29"> יורו 2024</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/UEFA-Euro-Cup-Germany-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+SPECIFIC+10+MINS+NUMBER+OF+CORNERS" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+SPECIFIC+10+MINS+NUMBER+OF+CORNERS"> יורו 2024 - 10 דקות - קרנות	</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/UEFA-Euro-Cup-Germany-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+SINGLE+TEAM+OVER%2FUNDER" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+SINGLE+TEAM+OVER%2FUNDER"> יורו 2024 - אנדר/אובר קבוצה אחת</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/UEFA-Euro-Cup-Germany-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+FREE+KICK" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+FREE+KICK"> יורו 2024 - בעיטות חופשיות</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/UEFA-Euro-Cup-Germany-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+GOAL+KICK" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+GOAL+KICK"> יורו 2024 - בעיטות שוער</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/UEFA-Euro-Cup-Germany-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+THROW+IN" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+THROW+IN"> יורו 2024 - זריקות חוץ</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/UEFA-Euro-Cup-Germany-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+RED+CARD" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+RED+CARD"> יורו 2024 - כרטיס אדום</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/UEFA-Euro-Cup-Germany-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+OFFSIDE" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+OFFSIDE"> יורו 2024 - נבדלים</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/UEFA-Euro-Cup-Germany-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+TOTAL+GOALS+MINUTES" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+TOTAL+GOALS+MINUTES"> יורו 2024 - סה"כ דקות שיובקעו הגולים</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/UEFA-Euro-Cup-Germany-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+PENALTY" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+PENALTY"> יורו 2024 - פנדלים</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/UEFA-Euro-Cup-Germany-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+CORNERS" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+CORNERS"> יורו 2024  - קרנות</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/UEFA-Euro-Cup-Germany-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+TOTAL+CORNER+%26+TOTAL+GOAL" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2AUEFA+EURO+2024+%28IN+GERMANY%29+-+TOTAL+CORNER+%26+TOTAL+GOAL"> יורו 2024- קרנות וגולים</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Japan.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="JAPAN+J-LEAGUE+DIVISION+3" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=JAPAN+J-LEAGUE+DIVISION+3"> יפן - ליגה שלישית</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Japan.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="JAPAN+FOOTBALL+LEAGUE" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=JAPAN+FOOTBALL+LEAGUE"> יפן - פוטבול ליג</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Japan.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="JAPAN+J-LEAGUE+DIVISION+1" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=JAPAN+J-LEAGUE+DIVISION+1"> יפן ליגה ג'יי 1</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Japan.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="JAPAN+J-LEAGUE+DIVISION+2" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=JAPAN+J-LEAGUE+DIVISION+2"> יפן ליגה ג'יי 2</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Latvia.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="LATVIA+VIRSLIGA" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=LATVIA+VIRSLIGA"> לטביה וירסליגה</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Lithuania.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="LITHUANIA+A+LYGA" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=LITHUANIA+A+LYGA"> ליטא ליגה ראשונה</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Egypt.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="EGYPT+PREMIER+LEAGUE" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=EGYPT+PREMIER+LEAGUE"> מצרים - פריימירליג</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Mexico.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="MEXICO+PRIMERA+DIVISION" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=MEXICO+PRIMERA+DIVISION"> מקסיקו פריימיר ליגה</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Norway.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="NORWAY+1ST+DIVISION" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=NORWAY+1ST+DIVISION"> נורבגיה ליגה ST1 </a>
+                          </li></ul><ul class="listCol3 my-list last"><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/China.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="CHINA+FOOTBALL+SUPER+LEAGUE" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=CHINA+FOOTBALL+SUPER+LEAGUE"> סין סופר ליגה</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Spain.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="SPAIN+TERCERA+FEDERACION+%28PLAY+OFF%29" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=SPAIN+TERCERA+FEDERACION+%28PLAY+OFF%29"> ספרד - ליגה חמישית	</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Spain.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="SPAIN+PRIMERA+FEDERACION+%28PLAY+OFF%29" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=SPAIN+PRIMERA+FEDERACION+%28PLAY+OFF%29"> ספרד - ליגה שלישית - פלייאוף</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Spain.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="SPAIN+SEGUNDA+DIVISION+%28PLAY+OFF%29" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=SPAIN+SEGUNDA+DIVISION+%28PLAY+OFF%29"> ספרד - ליגה שניה (פלייאוף)</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Spain.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="SPAIN+WOMEN+PRIMERA+DIVISION" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=SPAIN+WOMEN+PRIMERA+DIVISION"> ספרד פרמיירה - נשים</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Finland.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="FINLAND+YKKOSLIIGA" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=FINLAND+YKKOSLIIGA"> פינלנד - ליגה שנייה</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Finland.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="FINLAND+KAKKONEN" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=FINLAND+KAKKONEN"> פינלנד - קקונן</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Finland.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="FINLAND+CUP" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=FINLAND+CUP"> פינלנד גביע</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Peru.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="PERU+LIGA+2" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=PERU+LIGA+2"> פרו -  ליגה שנייה</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Chile.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="CHILE+CUP" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=CHILE+CUP"> צ'ילה גביע</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/CONMEBOL-Copa-America-Ecuador-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2ACOPA+AMERICA+2024+%28IN+USA%29+-+FREE+KICK" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2ACOPA+AMERICA+2024+%28IN+USA%29+-+FREE+KICK"> קופה אמריקה	 - בעיטות חופשיות</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/CONMEBOL-Copa-America-Ecuador-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2ACOPA+AMERICA+2024+%28IN+USA%29+-+GOAL+KICK" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2ACOPA+AMERICA+2024+%28IN+USA%29+-+GOAL+KICK"> קופה אמריקה	 - בעיטות שוער</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/CONMEBOL-Copa-America-Ecuador-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2ACOPA+AMERICA+2024+%28IN+USA%29+-+OWN+GOAL" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2ACOPA+AMERICA+2024+%28IN+USA%29+-+OWN+GOAL"> קופה אמריקה	 - גולים עצמיים</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/CONMEBOL-Copa-America-Ecuador-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2ACOPA+AMERICA+2024+%28IN+USA%29+-+THROW+IN" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2ACOPA+AMERICA+2024+%28IN+USA%29+-+THROW+IN"> קופה אמריקה	 - זריקות חוץ</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/CONMEBOL-Copa-America-Ecuador-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2ACOPA+AMERICA+2024+%28IN+USA%29+-+SUBSTITUTION" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2ACOPA+AMERICA+2024+%28IN+USA%29+-+SUBSTITUTION"> קופה אמריקה	 - חילופים</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/CONMEBOL-Copa-America-Ecuador-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2ACOPA+AMERICA+2024+%28IN+USA%29+-+RED+CARD" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2ACOPA+AMERICA+2024+%28IN+USA%29+-+RED+CARD"> קופה אמריקה	 - כרטיס אדום</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/CONMEBOL-Copa-America-Ecuador-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2ACOPA+AMERICA+2024+%28IN+USA%29+-+1st+HALF+vs+2nd+HALF" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2ACOPA+AMERICA+2024+%28IN+USA%29+-+1st+HALF+vs+2nd+HALF"> קופה אמריקה	 - מחצית ראשונה/מחצית שניה</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/CONMEBOL-Copa-America-Ecuador-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2ACOPA+AMERICA+2024+%28IN+USA%29+-+PENALTY" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2ACOPA+AMERICA+2024+%28IN+USA%29+-+PENALTY"> קופה אמריקה	- פנדלים </a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/CONMEBOL-Copa-America-Ecuador-2024.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="%2ACOPA+AMERICA+2024+%28IN+USA%29" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=%2ACOPA+AMERICA+2024+%28IN+USA%29"> קופה אמריקה</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/South-Korea.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="KOREA+K+LEAGUE+1" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=KOREA+K+LEAGUE+1"> קוריאה ליגה ראשונה</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/South-Korea.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="KOREA+K+LEAGUE+2" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=KOREA+K+LEAGUE+2"> קוריאה ליגה שנייה</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Canada.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="CANADIAN+PREMIER+LEAGUE" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=CANADIAN+PREMIER+LEAGUE"> קנדה - פרמייר ליג</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Sweden.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="SWEDEN+ETTAN+SOUTH" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=SWEDEN+ETTAN+SOUTH"> שבדיה - דרום</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Sweden.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="SWEDEN+ETTAN+NORTH" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=SWEDEN+ETTAN+NORTH"> שבדיה - צפון</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Sweden.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="SWEDEN+ALLSVENSKAN" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=SWEDEN+ALLSVENSKAN"> שוודיה אלסבנסקאן</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Sweden.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="SWEDEN+SUPERETTAN" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=SWEDEN+SUPERETTAN"> שוודיה סופרטאן</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                          <div class="flag-league-list"><img src="../files/flags1/Tunisia.png"></div>
+                          <div class="chack-box-list-leagues">
+                          
+                          <input name="liga[]" value="TUNISIAN+LEAGUE+%28PLAY+OFF%29" type="checkbox">
+                        
+      
+      
+                          </div>
+                          <a href="disp_sport_sel_liga.php?sport=soccer&amp;liga=TUNISIAN+LEAGUE+%28PLAY+OFF%29"> תוניסיה ליגת על (פלייאוף)</a>
+                          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                </li></ul></div>
+             
+          </div>
+          </div>
+           </form>
+          <div style="height:20px;"></div>
+      <form id="form_liga_basketball" method="get" action="disp_sport_milti_sel_liga.php">
+      <div class="regular-league-holde" style="display: block;">
+               
+            <div class="regular-league-bar"> 
+            <div class="list-leagues-ttl">כדורסל</div>
+      
+            <div id="submit_basketball" class="show-selected-leagues-ttl"> הצג ליגות שנבחרו</div>
+            <a href="/disp_sport.php?sport=basketball&amp;time=t"><div id="submit_basketball" class="show-selected-leagues-ttl"> משחקי היום</div></a>
+      
+            </div>  
+              
+            <div class="futer-lieagues-list-holder">
+         
+             <div class="listContainer2"><ul class="my-list listCol1">
+      
+      <input name="sport" value="basketball" type="hidden">
+                <input name="time" value="te" type="hidden">
+      
+      
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+                
+                <li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/United-States.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Usa%3A+Wnba" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=basketball&amp;liga=Usa%3A+Wnba"> Usa: Wnba</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Australia.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Australia%3A+Nbl1+Central" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=basketball&amp;liga=Australia%3A+Nbl1+Central"> אוסטרליה  - NBL - מרכז</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Australia.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Australia%3A+Nbl1+South" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=basketball&amp;liga=Australia%3A+Nbl1+South"> אוסטרליה - NBL - דרום</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Australia.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Australia%3A+Nbl1+South+Women" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=basketball&amp;liga=Australia%3A+Nbl1+South+Women"> אוסטרליה - NBL - דרום- נשים	</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Australia.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Australia%3A+Nbl1+West" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=basketball&amp;liga=Australia%3A+Nbl1+West"> אוסטרליה - NBL - מערב</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Australia.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Australia%3A+Nbl1+Central+Women" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=basketball&amp;liga=Australia%3A+Nbl1+Central+Women"> אוסטרליה - NBL - מרכז	 - נשים</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Australia.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Australia%3A+Nbl1+North+Women" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=basketball&amp;liga=Australia%3A+Nbl1+North+Women"> אוסטרליה - NBL - נשים</a>
+          </li></ul><ul class="listCol2 my-list"><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Indonesia.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Indonesia%3A+Ibl" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=basketball&amp;liga=Indonesia%3A+Ibl"> אינדונזיה  - Ibl</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Argentina.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Argentina%3A+Liga+A+-+Play+Offs" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=basketball&amp;liga=Argentina%3A+Liga+A+-+Play+Offs"> ארגנטינה - ליגה A </a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Basketball-NBA.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Usa%3A+Nba+-+Play+Offs" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=basketball&amp;liga=Usa%3A+Nba+-+Play+Offs"> אנ.בי.איי - (פלייאוף)</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Basketball-NBA.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Usa%3A+Nba+-+Play+Offs+%281st+Quarter%29" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=basketball&amp;liga=Usa%3A+Nba+-+Play+Offs+%281st+Quarter%29"> אנ.בי.איי - (פלייאוף) (רבע ראשון)</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Venezuela.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Venezuela%3A+Superliga" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=basketball&amp;liga=Venezuela%3A+Superliga"> ונצואלה -סופר ליגה</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Basketball-Winnersal-League.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Israel%3A+Super+League+-+Play+Offs" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=basketball&amp;liga=Israel%3A+Super+League+-+Play+Offs"> ישראל - סופר ליג - פלייאוף</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Australia.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="New+Zealand%3A+Nbl" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=basketball&amp;liga=New+Zealand%3A+Nbl"> ניו זילנד - NBL</a>
+          </li></ul><ul class="listCol3 my-list last"><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Poland.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Poland%3A+Basket+Liga+-+Play+Offs" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=basketball&amp;liga=Poland%3A+Basket+Liga+-+Play+Offs"> פולין - ליגה ראשונה	</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Philippines.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Philippines%3A+Philippine+Cup+-+Play+Offs" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=basketball&amp;liga=Philippines%3A+Philippine+Cup+-+Play+Offs"> פיליפינים - גביע	</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Chile.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Chile%3A+Lnb+-+Play+Offs" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=basketball&amp;liga=Chile%3A+Lnb+-+Play+Offs"> צ'ילה  - LNB</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Chile.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Chile%3A+Lnb+2" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=basketball&amp;liga=Chile%3A+Lnb+2"> צ'ילה - ליגה שנייה	</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Colombia.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Colombia%3A+Lbp" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=basketball&amp;liga=Colombia%3A+Lbp"> קולומביה - ליגה ראשונה</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                </li></ul></div>
+             
+          </div>
+          </div>
+           </form>
+          <div style="height:20px;"></div>
+      <form id="form_liga_tennis" method="get" action="disp_sport_milti_sel_liga.php">
+      <div class="regular-league-holde" style="display: block;">
+               
+            <div class="regular-league-bar"> 
+            <div class="list-leagues-ttl">טניס</div>
+      
+            <div id="submit_tennis" class="show-selected-leagues-ttl"> הצג ליגות שנבחרו</div>
+            <a href="/disp_sport.php?sport=tennis&amp;time=t"><div id="submit_tennis" class="show-selected-leagues-ttl"> משחקי היום</div></a>
+      
+            </div>  
+              
+            <div class="futer-lieagues-list-holder">
+         
+             <div class="listContainer3"><ul class="my-list listCol1">
+      
+      <input name="sport" value="tennis" type="hidden">
+                <input name="time" value="te" type="hidden">
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+                <li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/United-States.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Challenger+Men+-+Singles%3A+Ilkley+%28United+Kingdom%29+-+Qualification%2C+Grass" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=tennis&amp;liga=Challenger+Men+-+Singles%3A+Ilkley+%28United+Kingdom%29+-+Qualification%2C+Grass"> ATP - אילקלי</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Germany.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Atp+-+Singles%3A+Halle+%28Germany%29+-+Qualification%2C+Grass" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=tennis&amp;liga=Atp+-+Singles%3A+Halle+%28Germany%29+-+Qualification%2C+Grass"> ATP - הלה</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Netherlands.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Atp+-+Singles%3A+Hertogenbosch+%28Netherlands%29%2C+Grass" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=tennis&amp;liga=Atp+-+Singles%3A+Hertogenbosch+%28Netherlands%29%2C+Grass"> ATP - הרטוגנבוש	</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Peru.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Challenger+Men+-+Singles%3A+Lima+%28Peru%29%2C+Clay" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=tennis&amp;liga=Challenger+Men+-+Singles%3A+Lima+%28Peru%29%2C+Clay"> ATP - לימה</a>
+          </li></ul><ul class="listCol2 my-list"><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Italy.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Challenger+Men+-+Singles%3A+Perugia+%28Italy%29%2C+Clay" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=tennis&amp;liga=Challenger+Men+-+Singles%3A+Perugia+%28Italy%29%2C+Clay"> ATP - פרוג'ה	</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Germany.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Atp+-+Singles%3A+Stuttgart+%28Germany%29%2C+Grass" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=tennis&amp;liga=Atp+-+Singles%3A+Stuttgart+%28Germany%29%2C+Grass"> ATP - שטוטגרט	</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/England.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Challenger+Men+-+Singles%3A+Nottingham+%28United+Kingdom%29%2C+Grass" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=tennis&amp;liga=Challenger+Men+-+Singles%3A+Nottingham+%28United+Kingdom%29%2C+Grass"> ATP צ'אלנגר - נוטינגהאם	</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/France.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Itf+Women+-+Singles%3A+W100+Biarritz+%28France%29%2C+Clay" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=tennis&amp;liga=Itf+Women+-+Singles%3A+W100+Biarritz+%28France%29%2C+Clay"> ITF - ביאריץ - נשים	</a>
+          </li></ul><ul class="listCol3 my-list last"><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/United-States.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Itf+Men+-+Singles%3A+M25+Wichita%2C+Ks+%28Usa%29%2C+Hard" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=tennis&amp;liga=Itf+Men+-+Singles%3A+M25+Wichita%2C+Ks+%28Usa%29%2C+Hard"> ITF - וויצ'יטה	</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/England.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Wta+-+Singles%3A+Birmingham+%28United+Kingdom%29+-+Qualification%2C+Grass" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=tennis&amp;liga=Wta+-+Singles%3A+Birmingham+%28United+Kingdom%29+-+Qualification%2C+Grass"> WTA - בירמינגהם</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/England.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Wta+-+Singles%3A+Nottingham+%28United+Kingdom%29%2C+Grass" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=tennis&amp;liga=Wta+-+Singles%3A+Nottingham+%28United+Kingdom%29%2C+Grass"> WTA - נוטינגהאם	</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                </li></ul></div></div>
+          </div>
+           </form>
+          <div style="height:20px;"></div>
+      <form id="form_liga_icehockey" method="get" action="disp_sport_milti_sel_liga.php">
+      <div class="regular-league-holde" style="display: block;">
+               
+            <div class="regular-league-bar"> 
+            <div class="list-leagues-ttl">הוקי קרח</div>
+      
+            <div id="submit_icehockey" class="show-selected-leagues-ttl"> הצג ליגות שנבחרו</div>
+            <a href="/disp_sport.php?sport=icehockey&amp;time=t"><div id="submit_icehockey" class="show-selected-leagues-ttl"> משחקי היום</div></a>
+      
+            </div>  
+              
+            <div class="futer-lieagues-list-holder">
+         
+             <div class="listContainer4"><ul class="my-list listCol1">
+               
+               <input name="sport" value="icehockey" type="hidden">
+                <input name="time" value="te" type="hidden">
+      
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+                <li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Australia.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Australia%3A+Aihl" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=icehockey&amp;liga=Australia%3A+Aihl"> אוסטרליה - AIHL</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/Australia.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Australia%3A+Aihl+-+Regulation+Time" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=icehockey&amp;liga=Australia%3A+Aihl+-+Regulation+Time"> אוסטרליה - AIHL -פלייאוף תחתון</a>
+          </li></ul><ul class="listCol2 my-list"><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/United-States.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Usa%3A+Ahl+-+Play+Offs" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=icehockey&amp;liga=Usa%3A+Ahl+-+Play+Offs"> ארה״ב - ליגת AHL - פייאוף עליון</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/United-States.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Usa%3A+Ahl+-+Play+Offs+-+Regulation+Time" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=icehockey&amp;liga=Usa%3A+Ahl+-+Play+Offs+-+Regulation+Time"> ארה״ב - ליגת AHL - פייאוף תחתון</a>
+          </li></ul><ul class="listCol3 my-list last"><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/United-States.png"></div>
+          <div class="chack-box-list-leagues">
+          
+          <input name="liga[]" value="Usa%3A+Nhl+-+Play+Offs+-+Regulation+Time" type="checkbox">
+        
+      
+      
+          </div>
+          <a href="disp_sport_sel_liga.php?sport=icehockey&amp;liga=Usa%3A+Nhl+-+Play+Offs+-+Regulation+Time"> Usa: Nhl - Play Offs - Regulation Time</a>
+          </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                </li></ul></div></div>
+          </div>
+           </form>
+          <div style="height:20px;"></div>
+      <form id="form_liga_volleyball" method="get" action="disp_sport_milti_sel_liga.php">
+      <div class="regular-league-holde" style="display: block;">
+               
+            <div class="regular-league-bar"> 
+            <div class="list-leagues-ttl">כדורעף</div>
+      
+            <div id="submit_volleyball" class="show-selected-leagues-ttl"> הצג ליגות שנבחרו</div>
+            <a href="/disp_sport.php?sport=volleyball&amp;time=t"><div id="submit_volleyball" class="show-selected-leagues-ttl"> משחקי היום</div></a>
+      
+            </div>  
+              
+            <div class="futer-lieagues-list-holder">
+         
+             <div class="listContainer5"><ul class="my-list listCol1 last">
+               
+               <input name="sport" value="volleyball" type="hidden">
+                <input name="time" value="te" type="hidden">
+      
+                </ul></div><div class="noevent">אין אירועים זמינים כרגע</div></div>
+          </div>
+           </form>
+          <div style="height:20px;"></div>
+      <form id="form_liga_baseball" method="get" action="disp_sport_milti_sel_liga.php">
+      <div class="regular-league-holde" style="display: block;">
+               
+            <div class="regular-league-bar"> 
+            <div class="list-leagues-ttl">בייסבול</div>
+      
+            <div id="submit_baseball" class="show-selected-leagues-ttl"> הצג ליגות שנבחרו</div>
+            <a href="/disp_sport.php?sport=baseball&amp;time=t"><div id="submit_baseball" class="show-selected-leagues-ttl"> משחקי היום</div></a>
+            </div>  
+              
+            <div class="futer-lieagues-list-holder">
+         
+             <div class="listContainer6"><ul class="my-list listCol1">
+               
+               <input name="sport" value="baseball" type="hidden">
+                <input name="time" value="te" type="hidden">
+      
+              
+                    
+                      
+                    
+                    
+                    
+                      
+                    
+                    
+                    
+                      
+                    
+                    
+                    
+                      
+                    
+                    
+              
+                
+                
+                <li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                <div class="flag-league-list"><img src="../files/flags1/United-States.png"></div>
+                <div class="chack-box-list-leagues">
+                
+                <input name="liga[]" value="Usa%3A+Il+-+First+Stage" type="checkbox">
+              
+      
+      
+                </div>
+                <a href="disp_sport_sel_liga.php?sport=baseball&amp;liga=Usa%3A+Il+-+First+Stage"> ארה"ב - il - שלב ראשון</a>
+                </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                <div class="flag-league-list"><img src="../files/flags1/United-States.png"></div>
+                <div class="chack-box-list-leagues">
+                
+                <input name="liga[]" value="Usa%3A+Mlb" type="checkbox">
+              
+      
+      
+                </div>
+                <a href="disp_sport_sel_liga.php?sport=baseball&amp;liga=Usa%3A+Mlb"> ארה"ב - MLB</a>
+                </li></ul><ul class="listCol2 my-list"><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                <div class="flag-league-list"><img src="../files/flags1/United-States.png"></div>
+                <div class="chack-box-list-leagues">
+                
+                <input name="liga[]" value="Usa%3A+Pcl+-+First+Stage" type="checkbox">
+              
+      
+      
+                </div>
+                <a href="disp_sport_sel_liga.php?sport=baseball&amp;liga=Usa%3A+Pcl+-+First+Stage"> ארה"ב - PCL - שלב ראשון </a>
+                </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                <div class="flag-league-list"><img src="../files/flags1/Mexico.png"></div>
+                <div class="chack-box-list-leagues">
+                
+                <input name="liga[]" value="Mexico%3A+Lmb" type="checkbox">
+              
+      
+      
+                </div>
+                <a href="disp_sport_sel_liga.php?sport=baseball&amp;liga=Mexico%3A+Lmb"> מקסיקו - LMB</a>
+                </li></ul><ul class="listCol3 my-list last"><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                </li><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                </li></ul></div></div>
+          </div>
+           </form>
+          <div style="height:20px;"></div>
+      <form id="form_liga_boxing" method="get" action="disp_sport_milti_sel_liga.php">
+      <div class="regular-league-holde" style="display: block;">
+               
+            <div class="regular-league-bar"> 
+            <div class="list-leagues-ttl">איגרוף</div>
+      
+            <div id="submit_boxing" class="show-selected-leagues-ttl"> הצג ליגות שנבחרו</div>
+            <a href="/disp_sport.php?sport=boxing&amp;time=t"><div id="submit_boxing" class="show-selected-leagues-ttl"> משחקי היום</div></a>
+            </div>  
+              
+            <div class="futer-lieagues-list-holder">
+         
+             <div class="listContainer7"><ul class="my-list listCol1">
+               
+               <input name="sport" value="boxing" type="hidden">
+                <input name="time" value="te" type="hidden">
+      
+              
+                    
+                      
+                    
+                    
+              
+                
+                
+                <li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                <div class="flag-league-list"><img src="../files/flags1/Boxing-UFC.png"></div>
+                <div class="chack-box-list-leagues">
+                
+                <input name="liga[]" value="UFC+Fight+Night%3A+Perez+vs.+Taira" type="checkbox">
+              
+      
+      
+                </div>
+                <a href="disp_sport_sel_liga.php?sport=boxing&amp;liga=UFC+Fight+Night%3A+Perez+vs.+Taira"> UFC Fight Night: Perez vs. Taira</a>
+                </li></ul><ul class="listCol2 my-list"><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                </li></ul><ul class="listCol3 my-list last"><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                </li></ul></div></div>
+          </div>
+           </form>
+          <div style="height:20px;"></div>
+      <form id="form_liga_football" method="get" action="disp_sport_milti_sel_liga.php">
+      <div class="regular-league-holde" style="display: block;">
+               
+            <div class="regular-league-bar"> 
+            <div class="list-leagues-ttl">פוטבול</div>
+      
+            <div id="submit_football" class="show-selected-leagues-ttl"> הצג ליגות שנבחרו</div>
+            <a href="/disp_sport.php?sport=football&amp;time=t"><div id="submit_football" class="show-selected-leagues-ttl"> משחקי היום</div></a>
+            </div>  
+              
+            <div class="futer-lieagues-list-holder">
+         
+             <div class="listContainer8"><ul class="my-list listCol1">
+               
+               <input name="sport" value="football" type="hidden">
+                <input name="time" value="te" type="hidden">
+      
+              
+                  
+                    
+                  
+                  
+              
+                
+                
+                <li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+              <div class="flag-league-list"><img src="../files/flags1/Canada.png"></div>
+              <div class="chack-box-list-leagues">
+              
+              <input name="liga[]" value="Canada%3A+Cfl" type="checkbox">
+            
+      
+      
+              </div>
+              <a href="disp_sport_sel_liga.php?sport=football&amp;liga=Canada%3A+Cfl"> Canada: Cfl</a>
+              </li></ul><ul class="listCol2 my-list"><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                </li></ul><ul class="listCol3 my-list last"><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                </li></ul></div></div>
+          </div>
+           </form>
+          <div style="height:20px;"></div>
+      <form id="form_liga_soocer" method="get" action="disp_sport_milti_sel_liga.php">
+      <div class="regular-league-holde" style="display: block;">
+               
+            <div class="regular-league-bar"> 
+            <div class="list-leagues-ttl">צ'אנס</div>
+      
+            <div id="submit_volleyball" class="show-selected-leagues-ttl"> הצג ליגות שנבחרו</div>
+            </div>  
+              
+            <div class="futer-lieagues-list-holder">
+         
+             <div class="listContainer9"><ul class="my-list listCol1">
+               
+               <input name="sport" value="volleyball" type="hidden">
+                <input name="time" value="te" type="hidden">
+      
+              
+              
+                
+              
+              
+              
+                
+              
+              
+              
+                
+                <li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/chance.png"></div>
+          <div onclick="disp_lc.php?date=1718476200;" class="chack-box-list-leagues">
+          
+      <a href="disp_lc.php?date=1718476200">יום שבת 21:30</a>  
+      
+      
+          </div>
+          </li></ul><ul class="listCol2 my-list"><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+          <div class="flag-league-list"><img src="../files/flags1/chance.png"></div>
+          <div onclick="disp_lc.php?date=1718483400;" class="chack-box-list-leagues">
+          
+      <a href="disp_lc.php?date=1718483400">יום שבת 23:30</a>  
+      
+      
+          </div>
+          </li></ul><ul class="listCol3 my-list last"><li class="multi-colom-li text_direction" ng-repeat="liga in ligas">
+                </li></ul></div>
+             
+          </div>
+          </div>
+           </form>
+          <div style="height:20px;"></div>
+      
+      
+      
+      
+                  </div>

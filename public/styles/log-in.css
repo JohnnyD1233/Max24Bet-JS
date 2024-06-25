@@ -1,0 +1,164 @@
+/* font-family: "GothamProRegular"; */
+@font-face {
+    font-family: "GothamProRegular";
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+    url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "GothamProBold"; */
+@font-face {
+    font-family: "GothamProBold";
+    src: url("../fonts/GothamProBold/GothamProBold.eot");
+    src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProBold/GothamProBold.woff") format("woff"),
+    url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+::-webkit-input-placeholder {color:#fff;}
+::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#fff;}
+
+body {
+    background: #000;
+    padding: 0px;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    font-family: 'GothamProRegular', Arial, Helvetica, sans-serif;
+    background-image: url(/Images/login-Black-White.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wraper {
+    width: 1000px;
+    /* border: 1px solid red;*/
+    margin: auto;
+    height: 100%
+}
+
+.logo {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+
+.form-wrapper {
+    background: url("/Images/login-BG-Form.png") repeat scroll 0 0 transparent;
+    border-bottom: 4px solid #ffd161;
+    width: 920px;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-wrapper form label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    border: 2px solid #ffd161;
+    margin: 26px auto 0;
+    padding: 0 60px;
+}
+
+.form-wrapper form label.icon {
+    background-position: 25px center;
+    background-repeat: no-repeat;
+}
+
+.icon.icon-user {
+    background-image: url("/Images/login-Icon-user.png");
+}
+
+.icon.icon-lock {
+    background-image: url("/Images/login-Icon-lock.png");
+}
+
+.form-wrapper form label input {
+    background: transparent;
+    font-family: 'GothamProRegular';
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    width: 100%;
+}
+
+.btn {
+    background: #ffd161;
+    background: -moz-linear-gradient(top,  #ffd161 0%, #e9ae21 100%);
+    background: -webkit-linear-gradient(top,  #ffd161 0%,#e9ae21 100%);
+    background: linear-gradient(to bottom,  #ffd161 0%,#e9ae21 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd161', endColorstr='#e9ae21',GradientType=0 );
+    border: 1px solid #333;
+    cursor: pointer;
+    width: 363px;
+    color: #fff;
+    height: 66px;
+    font-size: 26.4px;
+    text-transform: uppercase;
+    margin-top: 48px;
+    font-family: 'GothamProBold';
+}
+
+.btn:hover {
+    opacity:0.8;
+}
+
+.butsection {
+
+    margin-top: 15px;
+    margin: auto;
+    width: 945px;
+}
+
+.login_error {
+
+    color: rgb(255, 0, 0);
+
+    font-weight: bold;
+
+    /* background-color: crimson; */
+
+    /* padding: 10px; */
+
+    margin-top: 20px;
+
+    font-family: GothamProBold;
+}
+
+.login_error + .btn {
+    margin-top: 23px;
+}
+
+.nevbar {
+
+    background: yellow;
+    height: 25px;
+    border-radius: 3px;
+    margin-top: 27px;
+    margin-bottom: 390px;
+
+}
+
+
+
+

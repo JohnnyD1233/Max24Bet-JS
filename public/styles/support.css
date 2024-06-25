@@ -1,0 +1,78 @@
+/* Support */
+#support {
+  display: flex;
+  flex-direction: column; /* Stacks the support blocks vertically */
+  gap: 20px;
+}
+
+.support-block {
+  flex: 1 1 auto; /* Adjusted to ensure blocks take up full available space */
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.support-block strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+.support-block p {
+  margin-bottom: 10px;
+  color: white;
+  line-height: 1.6;
+}
+
+.support-block a.support-btn {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: rgba(248, 193, 13, 0.897);
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.support-block a.support-btn:hover {
+  background-color: rgba(175, 139, 20, 0.897);
+}
+
+.support-block img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.support-block p:nth-of-type(3) {
+display: none;
+}
+
+.regular-league-bar {
+    margin-bottom: 20px; /* Space below the bar */
+    border-radius: 8px; /* Optional: add border radius for rounded corners */
+}
+
+/* List Leagues Title */
+.list-leagues-ttl {
+    font-size: 24px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Centered text */
+    color: rgba(248, 193, 13, 0.897); /* Text color */
+    padding: 10px; /* Optional: add padding for better spacing */
+    background-color: #333; /* Optional: add background color for contrast */
+}
+
+@media (min-width: 951px) {
+    #support {
+      flex-direction: row; /* Place the support blocks side by side */
+      direction: rtl; /* Set direction to right-to-left */
+    }
+  
+    .support-block {
+      flex: 1 1 calc(50% - 10px); /* Ensure blocks take up half of the available space minus the gap */
+    }
+  }

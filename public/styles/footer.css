@@ -1,0 +1,176 @@
+/* General reset */
+/* body {
+    min-height: 100vh;
+} */
+
+
+/* Main content area */
+/* .top-section {
+    flex: 1;
+} */
+
+/* Footer styling */
+#footering {
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    background: linear-gradient(to bottom, #1e1e1e 0%, #101010 100%);
+    width: 100%;
+    margin-top: auto; 
+}
+
+.footcontainer {
+    width: 100%;
+}
+
+
+
+.footrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+}
+
+.footermd3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1; 
+    padding: 10px; 
+}
+
+.social-links img {
+    padding-right: 10px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #777777;
+}
+
+.social-icons a {
+    color: #777777;
+}
+
+.social-icons a:hover {
+    color: #fcd462;
+}
+
+li {
+    list-style: none;
+}
+
+.useful-link h2 {
+    color: #fcd462;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.use-links {
+    line-height: 32px;
+}
+
+.use-links li {
+    font-size: 14px;
+    padding-right: 8px;
+    text-align: center;
+}
+
+.use-links li a {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.social-links h2 {
+    color: #fcd462;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.social-links a {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.use-links li a:hover {
+    color: #fcd462;
+}
+
+.img-fluid {
+    height: 70px;
+    margin-top: 60px;
+}
+
+.copy-right-sec {
+    padding: 20px 0;
+    background: #2c2c2c;
+    color: #ffffff;
+    text-align: center;
+}
+
+.copy-right-sec a {
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.img-contact {
+    height: 30px;
+    /* float: left; */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .col-md-3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        align-items: center;
+    }
+
+    .img-fluid {
+        margin-top: 0px;
+    }
+
+    .social-links img {
+        padding-right: 0;
+        margin-right: 10px;
+    }
+
+    .social-links a {
+        text-align: center;
+    }
+
+    .use-links li {
+        text-align: center;
+    }
+
+    .footrow{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .use-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .copy-right-sec{
+        padding-bottom: 70px;
+    }
+}

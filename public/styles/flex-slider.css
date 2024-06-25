@@ -1,0 +1,84 @@
+/* Make the slider container 70% width on fullscreen */
+.flexslider {
+  position: relative;
+  width: 70%; /* 70% width */
+  margin: 0 auto; /* Center the slider */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+/* Ensure slides take full width and adjust height */
+.flexslider .slides {
+  display: block; /* Ensure the slides container is block-level */
+  width: 100%; /* Full width for the slides container */
+  margin: 0;
+  padding: 0;
+  list-style: none; /* Remove default list styling */
+}
+
+.flexslider .slides > li {
+  position: relative;
+  width: 100%; /* Full width for each slide */
+  display: none; /* Hide all slides by default */
+}
+
+/* Show active slide */
+.flexslider .slides > li.flex-active-slide {
+  display: block; /* Show active slide */
+}
+
+/* Adjust images to be fully responsive */
+.flexslider .slides img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Adjust navigation styles */
+.flex-direction-nav {
+  display: block; /* Always show navigation arrows */
+}
+
+.slides {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove slider pagination dots */
+.flexslider .flex-control-nav {
+  display: none; /* Hide pagination dots */
+}
+
+/* Remove dots from slider list items */
+.flexslider .slides li {
+  list-style-type: none; /* Remove default list item markers */
+}
+
+/* Custom arrows for next and previous slides */
+.flexslider .flex-nav-prev,
+.flexslider .flex-nav-next {
+  position: absolute;
+  top: 50%; /* Vertically center */
+  transform: translateY(-50%);
+  width: 40px; /* Adjust as needed */
+  height: 40px; /* Adjust as needed */
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: -9999px; /* Hide text content */
+}
+
+.flexslider .flex-nav-prev {
+  left: 10px; /* Position the previous arrow on the left */
+  background-image: url('../Images/left-arrow.png'); 
+  display: none;
+}
+
+.flexslider .flex-nav-next {
+  right: 10px; /* Position the next arrow on the right */
+  background-image: url('../Images/right-arrow.png');
+  display: none;
+}
+
+@media (max-width: 950px) {
+  .flexslider {
+      width: 100%; /* Full width on smaller screens */
+  }
+}

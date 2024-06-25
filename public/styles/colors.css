@@ -1,0 +1,132 @@
+@font-face {
+    font-family: hebrewfont;
+    src: url(../fonts/asakim_bold-webfont.woff);
+    font-weight: bold;
+}
+
+body > header > div.header-wrapper > div.logo > a > img {
+
+    width: 134px;
+
+}
+
+.logo {
+    padding-top: 15px;
+}
+
+.user-info-bar-wrapper {
+    background: #121623;
+    height: 35px;
+}
+
+/* New Styles */
+
+body {
+    background: #000;
+}
+
+header {
+    margin-top: 0px;
+    height: auto;
+    padding-bottom: 0;
+}
+
+.header-wrapper:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.topticker {
+    position: static;
+}
+
+.multi-colom-li, li.menu-item {
+    background-color: #2c2c2c;
+}
+
+.multi-colom-li:hover, li.menu-item:hover {
+    background-color: #252424;
+}
+
+.regular-league-bar{
+    background: #1e1e1e;
+    background: -moz-linear-gradient(top,  #1e1e1e 0%, #101010 100%);
+    background: -webkit-linear-gradient(top,  #1e1e1e 0%,#101010 100%);
+    background: linear-gradient(to bottom,  #1e1e1e 0%,#101010 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e1e1e', endColorstr='#101010',GradientType=0 );
+
+}
+
+.list-leagues-ttl, .menu-live-btn, .lg-ttl, .b_betslip .main-title.betslip-main-title, .b_betslip .button.place-bet, .buttonlc:hover, .buttonlc:focus, .sub button, .main-menu-item a:hover, .tizerbtn  {
+    background: #ffd161;
+    background: -moz-linear-gradient(top,  #ffd161 0%, #e9ae21 100%);
+    background: -webkit-linear-gradient(top,  #ffd161 0%,#e9ae21 100%);
+    background: linear-gradient(to bottom,  #ffd161 0%,#e9ae21 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd161', endColorstr='#e9ae21',GradientType=0 );
+
+}
+
+.regular-league-bar {
+    border-bottom-color: #e9ae21;
+}
+
+.menu-clos-open {
+    border-color: #e9ae21;
+}
+
+.noevent {
+    background: #2c2c2c;
+}
+
+/* #footer {
+    background: #656267 !important;
+} */
+
+.menu-mix-live-btn, .menu-clos-open, header {
+    background-image: linear-gradient(to bottom, #202020 0%, #2b2b2b 100%);
+}
+
+.user-info-bar-wrapper {
+    background: url('../images/led_bg.png') repeat scroll 0 0 transparent;
+}
+
+.user-info, .time_top, .option-menu nav ul ul, .option-menu nav > ul > li:hover > a, .oods-tbl th {
+    background: #393939;
+}
+
+.logout-btn {
+    color: #f98c2d;
+}
+
+.time_top, .noevent, .user-balance, .scoreinlinedisplay, .inliop-game-ttl-league, span.optionsodd {
+    color: #ffd161;
+}
+
+.betlisttotaldec p:last-child, .betlisttotalfig p:last-child, .option-game-info span:last-child {
+    color: #ffd161 !important;
+}
+
+.oods-tbl td.hover:hover, .oods-tbl tr.odd td.hover:hover, .b_betslip .b-bets__name, .sub button:hover {
+    background: #ffd161;
+}
+
+tr td.td-active {
+    background-color: #ffd161 !important;
+}
+
+.option-menu nav > ul > li:hover > ul > li > a {
+    background-color: transparent;
+}
+
+.betlist_table {
+    background-color: transparent;
+}
+
+.top-section {
+    min-height: 0;
+}
+
+#news ul {margin:0;}
+#news ul:after {content:"";display:block;clear:left;}
+#news ul li {display: list-item;margin: 0 40px;list-style-type:circle;float: left;}

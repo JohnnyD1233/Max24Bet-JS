@@ -1,0 +1,44 @@
+<header>
+    <!-- <link rel="stylesheet" href="/styles/change-pass.css" /> -->
+
+    <%-include("header.ejs"); %>
+    
+    </header>
+     
+       <section class="top-section">
+          <div class="main_block">
+        
+        
+        <div class="login-wrap">
+        
+        <div class="login-in">
+          <h3>Change Password</h3>
+          
+          <div class="login-form">
+            <form  action="change_pass.php" method="GET">
+            
+            <label>Old Password</label>
+              <input  name='old_pass' type="password" class="txt">
+              
+              <label>New Password</label>
+              <input name='new_pass' type="password" class="txt">
+    
+              <label>Confirm New Password</label>
+              <input name='confirm_pass' type="password" class="txt">
+    
+              <input type="submit" value=Submit class="btn">
+              <div class="clear-float"></div>
+            </form>
+          </div>
+        </div>
+       </div>
+        
+        
+    
+    
+        </div>
+          <div class="side_block">
+            <%- include("side-menu.ejs");%>
+          </div>
+       </section>
+    

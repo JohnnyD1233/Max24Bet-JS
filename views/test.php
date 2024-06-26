@@ -7,7 +7,7 @@ else {echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/style_ltr.cs
 
 <?php if ($_SESSION['user']['language'] == 3) echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/betslip_rtl.css?v=2\">"; ?>
 
-
+<!-- new -->
 
 if ($_SESSION['user']['language'] == 3)   {echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/style_rtl_new.css\">";}
 

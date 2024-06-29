@@ -403,6 +403,9 @@ marquee {
   .phones-only{
     display: none;
   }
+  .player-status{
+    display: none;
+  }
 
 }
 
@@ -433,6 +436,73 @@ marquee {
 
   .top-section {
     padding: 0px;
+}
+.player-status {
+  background: linear-gradient(to bottom, #1e1e1e 0%, #101010 100%);
+  border: 0.8px solid rgb(241, 187, 37);
+  border-radius: 50px;
+  padding: 10px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 75px;
+  align-items: center;
+  /* width: 100%; */
+  max-width: 376px;
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+  white-space: nowrap;
+}
+.player-status img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.player-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.player-status .name {
+  color: rgb(241, 187, 37);
+  font-size: 17px;
+  /* margin: 10px 0; */
+  flex-wrap: nowrap;
+  /* color: white; */
+}
+.player-status .credits {
+  font-size: 12px;
+  /* margin: 5px 0; */
+  flex-wrap: nowrap;
+  color: white;
+}
+.player-status button {
+  background-color: #2600ff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+}
+.player-status button:hover {
+  background-color: #3b3838;
+}
+.phone-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.account{
+  font-size: 12px;
 }
 
 }

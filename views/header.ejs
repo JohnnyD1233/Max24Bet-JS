@@ -1,17 +1,81 @@
-
 <link rel="stylesheet" href="/styles/animate.css" />
 <link rel="stylesheet" href="/styles/jquery-ui.structure.css" />
 <link rel="stylesheet" href="/styles/jquery.alerts.css" />
 <link rel="stylesheet" href="/styles/tabscss.css" />
-<link rel="stylesheet" href="/styles/style_rtl_new.css">
+<link rel="stylesheet" href="/styles/style_rtl_new.css" />
 <link rel="stylesheet" href="/styles/colors.css" />
+<!-- <style>
+  .player-status {
+    background-color: #444444;
+    border: 1px solid rgb(241, 187, 37);
+    border-radius: 50px;
+    padding: 10px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+    align-items: center;
+    /* width: 100%; */
+    max-width: 376px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    white-space: nowrap;
+  }
+  .player-status img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+  .player-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .player-status .name {
+    color: rgb(241, 187, 37);
+    font-size: 17px;
+    /* margin: 10px 0; */
+    flex-wrap: nowrap;
+    /* color: white; */
+  }
+  .player-status .credits {
+    font-size: 12px;
+    /* margin: 5px 0; */
+    flex-wrap: nowrap;
+    color: white;
+  }
+  .player-status button {
+    background-color: #2600ff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+  }
+  .player-status button:hover {
+    background-color: #3b3838;
+  }
+  .phone-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .account{
+    font-size: 12px;
+  }
+</style> -->
 
-
-
-<link rel="shortcut icon" href="/Images/login-Logo-test.png">
+<link rel="shortcut icon" href="/Images/login-Logo-test.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-
 
 <div class="pc-container">
   <div class="user-info-bar-wrapper">
@@ -52,7 +116,6 @@
           </ul>
         </nav>
       </div>
-
     </div>
   </div>
 
@@ -61,41 +124,45 @@
       <a href="/"><img src="/Images/login-Logo.png" alt="Max24Bet" /></a>
     </div>
 
-
-    
-      <div class="casino-logo">
-        <nav class="main-nav">
-          <ul class="main-menu">
-            <il class="main-menu-item"><a href="/">Home</a></il>
-            <il class="main-menu-item"><a href="/live">Live</a></il>
-            <il class="main-menu-item"><a href="">Tizer</a></il>
-            <il class="main-menu-item"><a href="">Casino</a></il>
-            <il class="main-menu-item"><a href="">Special</a></il>
-          </ul>
-        </nav>
-        <div class="outer-box_player_panel" id="outer-box">
-          <div class="container_player_panel">
-            <div class="player-name">Hi Player</div>
-            <div class="balance_player_panel">Your Balance : 5,000$</div>
-            <div class="fire-image_player_panel"></div>
-            <div class="account_player_panel">
-              My account<a href="/bet-list"></a>
-            </div>
-            <div class="log-out_player_panel">
-              Logout<a href=""></a>
-            </div>
+    <div class="casino-logo">
+      <nav class="main-nav">
+        <ul class="main-menu">
+          <il class="main-menu-item"><a href="/">Home</a></il>
+          <il class="main-menu-item"><a href="/live">Live</a></il>
+          <il class="main-menu-item"><a href="">Tizer</a></il>
+          <il class="main-menu-item"><a href="">Casino</a></il>
+          <il class="main-menu-item"><a href="">Special</a></il>
+        </ul>
+      </nav>
+      <div class="outer-box_player_panel" id="outer-box">
+        <div class="container_player_panel">
+          <div class="player-name">Hi Player</div>
+          <div class="balance_player_panel">Your Balance : 5,000$</div>
+          <div class="fire-image_player_panel"></div>
+          <div class="account_player_panel">
+            My account<a href="/bet-list"></a>
           </div>
+          <div class="log-out_player_panel">Logout<a href=""></a></div>
         </div>
       </div>
+    </div>
   </div>
 </div>
 <!-- end of PC-header  -->
 
-
 <!-- Phone header -->
+ <div class="phone-header">
 <div class="phone-logo">
-  <a href="/"><img src="/Images/login-Logo.png" alt="Max24Bet" />
-  </a>
+  <a href="/"><img src="/Images/login-Logo.png" alt="Max24Bet" /> </a>
+</div>
+<div class="player-status">
+  <img src="/Images/user_panel_icon.png" alt="Player Image" />
+  <div class="name-balace">
+    <div class="name">Player Name</div>
+    <div class="credits">Credits: 1000</div>
+    <div class="account">My account<a href="/bet-list"></a></div>
+  </div>
+  <a class="logout-div">Logout</a>
 </div>
 <div class="topticker">
   <marquee
@@ -105,9 +172,13 @@
     onmouseout="this.start();"
   >
     <li>!חגיגות היורו התחילו</li>
-    <li>שימו לב ניתן להמר על הימורים מיוחדים עתידיים כגון : זוכה ביורו , זוכה בקופה , מלך שערים וכו' בלחיצת כפתור המיוחדים</li>
+    <li>
+      שימו לב ניתן להמר על הימורים מיוחדים עתידיים כגון : זוכה ביורו , זוכה
+      בקופה , מלך שערים וכו' בלחיצת כפתור המיוחדים
+    </li>
     <li>!!לחצו על הבאנרים לרשימת המשחקים ופרטים!!</li>
   </marquee>
+</div>
 </div>
 
 <div class="container">
@@ -115,88 +186,218 @@
     <button class="dropbtn" onclick="toggleProfileMenu()">
       <span class="iconss">
         <img src="/Images/Profile.png" alt="Profile Icon" class="icon-img" />
-        <span class="text-open" style="font-weight: bold; color: black;">Profile</span>
+        <span class="text-open" style="font-weight: bold; color: black"
+          >Profile</span
+        >
       </span>
     </button>
     <a href="/live" class="dropbtn">
       <span class="iconss">
         <img src="/Images/Live-icon.png" alt="Live Icon" class="icon-img" />
-        <span style="font-weight: bold; color: black;">Live</span>
+        <span style="font-weight: bold; color: black">Live</span>
       </span>
     </a>
     <a href="/" class="dropbtn">
       <span class="iconss">
         <img src="/Images/Chip.png" alt="Slots Icon" class="icon-img" />
-        <span style="font-weight: bold; color: black;">Casino</span>
+        <span style="font-weight: bold; color: black">Casino</span>
       </span>
     </a>
-        <button class="dropbtn" onclick="toggleSportsMenu()">
-            <span class="iconss">
-              <img src="/Images/Sports.png" class="icon-img" />
-              <span class="text-open" style="font-weight: bold; color: black;">Sports</span>
-            </span>
-          </button>
+    <button class="dropbtn" onclick="toggleSportsMenu()">
+      <span class="iconss">
+        <img src="/Images/Sports.png" class="icon-img" />
+        <span class="text-open" style="font-weight: bold; color: black"
+          >Sports</span
+        >
+      </span>
+    </button>
   </div>
 
-
-<!-- Profile menu -->
+  <!-- Profile menu -->
   <div id="profileMenu" class="profile-menu">
-    <img onclick="toggleProfileMenu('profile-menu')" src="/Images/icones/x.png" class="x-icon" /><br/>
-    <a class="status"
+    <img
+      onclick="toggleProfileMenu('profile-menu')"
+      src="/Images/icones/x.png"
+      class="x-icon"
+    /><br />
+    <!-- <a class="status"
       >Hi John Doe <br />
       Balance : 5000</a
-    >
+    > -->
     <a href="/bet-list">My Account</a>
     <a href="/change-pass">Change Password</a>
     <a href="/bet-list">Bet List</a>
     <a href="/super-agent">Admin</a>
-    <a class="odds" href="#" style="font-weight: bold;" onclick="toggleSubMenu('oddsMenu')">Odds</a>
+    <a
+      class="odds"
+      href="#"
+      style="font-weight: bold"
+      onclick="toggleSubMenu('oddsMenu')"
+      >Odds</a
+    >
     <ul id="oddsMenu">
-      <li><a href="">Decimal: <br/> 2.38 </a></li>
-      <li><a href="">American: <br/> +138 </a></li>
+      <li>
+        <a href=""
+          >Decimal: <br />
+          2.38
+        </a>
+      </li>
+      <li>
+        <a href=""
+          >American: <br />
+          +138
+        </a>
+      </li>
     </ul>
-    <a class="lang" href="#" style="font-weight: bold;" onclick="toggleSubMenu('langMenu')">Language</a>
+    <a
+      class="lang"
+      href="#"
+      style="font-weight: bold"
+      onclick="toggleSubMenu('langMenu')"
+      >Language</a
+    >
     <ul id="langMenu">
-      <li><a href="">עברית<img src="/Images/Israel.png" alt="Slots Icon" class="flags-img"/></a></li>
-      <li><a href="">English<img src="/Images/United States.png" alt="Slots Icon" class="flags-img"/></a></li>
-      <li><a href="">Chinese<img src="/Images/China.png" alt="Slots Icon" class="flags-img"/></a></li>
-      <li><a href="">France<img src="/Images/France.png" alt="Slots Icon" class="flags-img"/></a></li>
+      <li>
+        <a href=""
+          >עברית<img
+            src="/Images/Israel.png"
+            alt="Slots Icon"
+            class="flags-img"
+        /></a>
+      </li>
+      <li>
+        <a href=""
+          >English<img
+            src="/Images/United States.png"
+            alt="Slots Icon"
+            class="flags-img"
+        /></a>
+      </li>
+      <li>
+        <a href=""
+          >Chinese<img
+            src="/Images/China.png"
+            alt="Slots Icon"
+            class="flags-img"
+        /></a>
+      </li>
+      <li>
+        <a href=""
+          >France<img
+            src="/Images/France.png"
+            alt="Slots Icon"
+            class="flags-img"
+        /></a>
+      </li>
     </ul>
     <a href="results.php">Results</a>
-    <a href="/support">Support<img src="/Images/telegram.png" alt="Slots Icon" class="logout-img"/></a>
-    <a href="/login">Logout<img src="/Images/images.png" alt="Slots Icon" class="logout-img"/></a>
+    <a href="/support"
+      >Support<img
+        src="/Images/telegram.png"
+        alt="Slots Icon"
+        class="logout-img"
+    /></a>
+    <a href="/login"
+      >Logout<img src="/Images/images.png" alt="Slots Icon" class="logout-img"
+    /></a>
   </div>
 </div>
 
 <!-- Sports menu -->
 <div id="sportsMenu" class="sports-menu">
-  <img src="/Images/icones/x.png" onclick="toggleSportsMenu('sports-menu')" class="x-icon" />
-    <a href="/"><img src="/Images/icones/Home.png" alt="Slots Icon" class="sport-img home-icon"/>Home</a>
-    <a href="#"><img src="/Images/icones/Soccer-new.png" alt="Slots Icon" class="sport-img soccer-icon"/>Soccer</a>
-    <a href="#"><img src="/Images/icones/Basketball-new.png" alt="Slots Icon" class="sport-img basketball-icon"/>Basketball</a>
-    <a href="#"><img src="/Images/icones/Tennis-new.png" alt="Slots Icon" class="sport-img"/>Tennis</a>
-    <a href="/chance"><img src="/Images/icones/Chance-new.png" alt="Slots Icon" class="sport-img" />Chance</a>
-    <a href="#"><img src="/Images/icones/Ice-hockey-new.png" alt="Slots Icon" class="sport-img" />Ice Hockey</a>
-    <a href="#"><img src="/Images/icones/Football-new.png" alt="Slots Icon" class="sport-img" />Football</a>
-    <a href="#"><img src="/Images/icones/Vollyball-new.png" alt="Slots Icon" class="sport-img" />Vollyball</a>
-    <a href="#"><img src="/Images/icones/Rugby-new.png" alt="Slots Icon" class="sport-img" />Rugby</a>
-    <a href="#"><img src="/Images/icones/Baseball-new.png" alt="Slots Icon" class="sport-img" />Baseball</a>
-    <a href="#"><img src="/Images/icones/Boxing-new.png" alt="Slots Icon" class="sport-img" />Boxing</a>
-  </div>
+  <img
+    src="/Images/icones/x.png"
+    onclick="toggleSportsMenu('sports-menu')"
+    class="x-icon"
+  />
+  <a href="/"
+    ><img
+      src="/Images/icones/Home.png"
+      alt="Slots Icon"
+      class="sport-img home-icon"
+    />Home</a
+  >
+  <a href="#"
+    ><img
+      src="/Images/icones/Soccer-new.png"
+      alt="Slots Icon"
+      class="sport-img soccer-icon"
+    />Soccer</a
+  >
+  <a href="#"
+    ><img
+      src="/Images/icones/Basketball-new.png"
+      alt="Slots Icon"
+      class="sport-img basketball-icon"
+    />Basketball</a
+  >
+  <a href="#"
+    ><img
+      src="/Images/icones/Tennis-new.png"
+      alt="Slots Icon"
+      class="sport-img"
+    />Tennis</a
+  >
+  <a href="/chance"
+    ><img
+      src="/Images/icones/Chance-new.png"
+      alt="Slots Icon"
+      class="sport-img"
+    />Chance</a
+  >
+  <a href="#"
+    ><img
+      src="/Images/icones/Ice-hockey-new.png"
+      alt="Slots Icon"
+      class="sport-img"
+    />Ice Hockey</a
+  >
+  <a href="#"
+    ><img
+      src="/Images/icones/Football-new.png"
+      alt="Slots Icon"
+      class="sport-img"
+    />Football</a
+  >
+  <a href="#"
+    ><img
+      src="/Images/icones/Vollyball-new.png"
+      alt="Slots Icon"
+      class="sport-img"
+    />Vollyball</a
+  >
+  <a href="#"
+    ><img
+      src="/Images/icones/Rugby-new.png"
+      alt="Slots Icon"
+      class="sport-img"
+    />Rugby</a
+  >
+  <a href="#"
+    ><img
+      src="/Images/icones/Baseball-new.png"
+      alt="Slots Icon"
+      class="sport-img"
+    />Baseball</a
+  >
+  <a href="#"
+    ><img
+      src="/Images/icones/Boxing-new.png"
+      alt="Slots Icon"
+      class="sport-img"
+    />Boxing</a
+  >
+</div>
 
 <script>
-
-  
-function toggleSportsMenu() {
+  function toggleSportsMenu() {
     var sportsMenu = document.getElementById("sportsMenu");
     if (sportsMenu.style.display === "block") {
-        sportsMenu.style.display = "none";
+      sportsMenu.style.display = "none";
     } else {
-        sportsMenu.style.display = "block";
+      sportsMenu.style.display = "block";
     }
   }
-
-  
 
   function toggleProfileMenu() {
     var profileMenu = document.getElementById("profileMenu");
@@ -207,20 +408,22 @@ function toggleSportsMenu() {
     }
   }
 
-  document.querySelectorAll('.text-open').forEach(element => {
-    element.addEventListener('click', (event) => {
-        // Determine which menu to toggle based on the parent button's function
-        var parentButton = element.closest('.dropbtn');
-        if (parentButton) {
-            if (parentButton.getAttribute('onclick') === 'toggleSportsMenu()') {
-                toggleSportsMenu();
-            } else if (parentButton.getAttribute('onclick') === 'toggleProfileMenu()') {
-                toggleProfileMenu();
-            }
+  document.querySelectorAll(".text-open").forEach((element) => {
+    element.addEventListener("click", (event) => {
+      // Determine which menu to toggle based on the parent button's function
+      var parentButton = element.closest(".dropbtn");
+      if (parentButton) {
+        if (parentButton.getAttribute("onclick") === "toggleSportsMenu()") {
+          toggleSportsMenu();
+        } else if (
+          parentButton.getAttribute("onclick") === "toggleProfileMenu()"
+        ) {
+          toggleProfileMenu();
         }
-        event.stopPropagation(); // Prevents event bubbling
+      }
+      event.stopPropagation(); // Prevents event bubbling
     });
-});
+  });
 
   // Function to toggle sub-menus
   function toggleSubMenu(menuId) {
@@ -236,7 +439,12 @@ function toggleSportsMenu() {
   window.onclick = function (event) {
     var profileMenu = document.getElementById("profileMenu");
     var sportsMenu = document.getElementById("sportsMenu");
-    if (event.target !== profileMenu && !profileMenu.contains(event.target) && event.target.className !== "dropbtn" || event.target === profileMenu ) {
+    if (
+      (event.target !== profileMenu &&
+        !profileMenu.contains(event.target) &&
+        event.target.className !== "dropbtn") ||
+      event.target === profileMenu
+    ) {
       sportsMenu.style.display = "none";
       profileMenu.style.display = "none";
     }
@@ -249,5 +457,4 @@ function toggleSportsMenu() {
       });
     }
   };
-
 </script>
